@@ -1,0 +1,43 @@
+<ion-header class="{{superlevelSelected}}">
+  <ion-navbar><ion-title>{{superlevelSelected}}</ion-title></ion-navbar>
+</ion-header>
+
+<ion-content padding class="{{superlevelSelected}}">
+  <p class="general-pretit">Levels: {{superlevel.levels}}</p>
+  <h2 class="general-tit text-capitalize">{{superlevel.name}}</h2>
+  <p class="superlevel-description">{{superlevel.description}}</p>
+  <!--<ion-grid>
+    <ion-row>
+      <ion-col>
+        <p class="general-pretit">Levels: 8 - 12</p>
+        <h2 class="general-tit text-capitalize">Pre-Intermediate</h2>
+        <p></p>
+        <div class="activities grammar">
+          <span class="stack-icon"></span>
+          <p class="modules-head">{{moduleContent?.length}} {{selectedModuleType}}</p>
+        </div>
+      </ion-col>
+      <ion-col col-2>
+        <span class="{{selectedModule}}-icon-white"></span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>-->
+
+  <ion-card (click)="goToLevel(x)" *ngFor="let x of levels; let i = index;">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <p class="level-pretit">{{x.name}}</p>
+          <h2 class="level-tit ">{{x.description}}</h2>
+          <div class="activities grammar">
+            <span class="stack-icon-{{superlevelSelected}}"></span>
+            <span class="text-{{superlevelSelected}}">5 Blocks</span>
+          </div>
+        </ion-col>
+        <ion-col class="relative-col" col-3>
+          <span class="progress-bar percent-42 {{superlevelSelected}} transparent" text-center><span class="clock-icon-blue"></span><span class="progress-text">70 min</span></span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>

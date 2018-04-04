@@ -1,0 +1,22 @@
+{
+  "questionText": "<p class='description'>Click on the sentences of each group that is correct.</p>",
+  "answers": [
+    {
+      "answer": "<span class='badge'>1</span> The angora sweater can dry-clean but not wash in the washing machine.",
+      "correct": true,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>2</span> The angora sweater can be dry-cleaned but not washed in the washing machine.",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>3</span> The angora sweater can dry-clean but not be washed in the washing machine.",
+      "correct": false,
+      "selected": false
+    }
+  ]
+
+}
+

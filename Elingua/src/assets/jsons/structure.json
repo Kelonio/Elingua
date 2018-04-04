@@ -1,0 +1,144 @@
+{
+  "superlevel": {
+    "beginner": [
+      {
+        "name": "level 0",
+        "description": "Beginner",
+        "file": "level0.json"
+      },
+      {
+        "name": "level 1",
+        "description": "Everyday life",
+        "file": "level1.json"
+      },
+      {
+        "name": "level 2",
+        "description": "Going Shopping",
+        "file": "level2.json"
+      },
+      {
+        "name": "level 3",
+        "description": "Making a Plan",
+        "file": "level3.json"
+      }
+    ],
+    "elementary": [
+      {
+        "name": "level 4",
+        "description": "Describing past experiences and recent activities",
+        "file": "level4.json"
+      },
+      {
+        "name": "level 5",
+        "description": "Going out",
+        "file": "level5.json"
+      },
+      {
+        "name": "level 6",
+        "description": "Telling stories",
+        "file": "level6.json"
+      },
+      {
+        "name": "level 7",
+        "description": "What are you doing?",
+        "file": "level7.json"
+      }
+    ],
+    "preintermediate": [
+      {
+        "name": "level 8",
+        "description": "A domestic Accident",
+        "file": "level8.json"
+      },
+      {
+        "name": "level 9",
+        "description": "Getting to know the neighbours",
+        "file": "level9.json"
+      },
+      {
+        "name": "level 10",
+        "description": "Rules and Regulation",
+        "file": "level10.json"
+      },
+      {
+        "name": "level 11",
+        "description": "Relationships",
+        "file": "level11.json"
+      },
+      {
+        "name": "level 12",
+        "description": "We're very different people",
+        "file": "level12.json"
+      }
+    ],
+    "intermediate": [
+      {
+        "name": "level 13",
+        "description": "Keeping Fit",
+        "file": "level13.json"
+      },
+      {
+        "name": "level 14",
+        "description": "Description",
+        "file": "level14.json"
+      },
+      {
+        "name": "level 15",
+        "description": "Habit",
+        "file": "level15.json"
+      },
+      {
+        "name": "level 16",
+        "description": "Sport, Health and Illness",
+        "file": "level16.json"
+      },
+      {
+        "name": "level 17",
+        "description": "The Narrative Tenses",
+        "file": "level17.json"
+      },
+      {
+        "name": "level 18",
+        "description": "Question forms",
+        "file": "level18.json"
+      },
+      {
+        "name": "level 19",
+        "description": "The blood and the bow-tie",
+        "file": "level19.json"
+      }
+    ],
+    "advanced": [
+      {
+        "name": "level 20",
+        "description": "The lion´s den",
+        "file": "level20.json"
+      },
+      {
+        "name": "level 21",
+        "description": "I smell a rat",
+        "file": "level21.json"
+      },
+      {
+        "name": "level 22",
+        "description": "Over the moon",
+        "file": "level22.json"
+      },
+      {
+        "name": "level 23",
+        "description": "An appealing story with interesting characters",
+        "file": "level23.json"
+      },
+      {
+        "name": "level 24",
+        "description": "I wis we hadn't even started",
+        "file": "level24.json"
+      },
+      {
+        "name": "level 25",
+        "description": "A surprise in the post",
+        "file": "level25.json"
+      }
+    ]
+  }  
+}

@@ -1,0 +1,73 @@
+page-comprehension {
+  .header-md::after {
+    display: none;
+  }
+
+  .stack-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/stack-icon.png);
+    width: 17px;
+    background-size: cover;
+    height: 14px;
+    margin-top: 2px;
+  }
+
+  .toolbar-title {
+    color: white;
+    font-size: 1.3rem;
+    padding-left: 0px;
+  }
+
+  .general-pretit {
+    color: white;
+    font-size: 11px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+  }
+
+  .general-tit {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    text-transform: capitalize;
+  }
+
+  .modules-head {
+    color: white !important;
+    margin-top: 3px;
+    margin-bottom: 31px;
+  }
+
+  .exercise-head {
+    color: white !important;
+    margin-top: 3px;
+    margin-bottom: 31px;
+    text-transform: capitalize;
+  }
+
+  .activities.grammar {
+    display: flex;
+
+    p {
+      color: #28d4f9;
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+  .overlay-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: red;
+    z-index: 999;
+    display: none;
+  }
+  .overlay-show{
+    display: block;
+  }
+}

@@ -1,0 +1,17 @@
+<ion-card>
+  <ion-card-content>
+    <div [innerHTML]="questionData?.questionText | safeHtml"></div>
+
+    <div class="radio-container" radio-group>
+      <ion-item *ngFor="let a of questionData?.answers ; let i = index;">
+        <ion-label [innerHTML]="a.answer | safeHtml"></ion-label>       
+        <ion-radio (click)="emitNextEvent()" ></ion-radio>
+      </ion-item>
+    </div>
+
+    <button ion-button color="light" class="corregir-btn" *ngIf="!isContained" round (click)="corregir()">Check</button>
+
+  </ion-card-content>
+</ion-card>
+
+

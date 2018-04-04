@@ -1,0 +1,267 @@
+result-modal {
+  .MB3 {
+    margin-bottom: 3px;
+  }
+
+  .H27 {
+    height: 27px !important;
+    line-height: 22px;
+  }
+
+  .header::after {
+    display: none;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+
+  .bar-button-default {
+    color: white;
+    margin-right: 0px;
+  }
+
+  .toolbar-title {
+    color: red;
+    font-size: 1.3rem;
+    padding-left: 0px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 5px;
+  }
+
+  .result-number {
+    font-weight: 500;
+    font-size: 21px;
+    margin-right: 5px;
+  }
+
+  .result-time-title {
+    line-height: 29px;
+  }
+
+  .relative-col {
+    position: relative;
+  }
+
+  .result-table-header {
+    color: white;
+    font-size: 15px;
+  }
+
+  span.progress-bar:before {
+    background-color: #28d4f9;
+  }
+
+  span.progress-bar:after {
+    background-color: #b3b6b7;
+  }
+
+  span.progress-bar {
+    width: 100% !important;
+    right: 9px;
+    font-size: 11px;
+    color: grey;
+    bottom: calc(50% - 4px);
+    height: 14px;
+  }
+
+  span.progress-bar:after,
+  span.progress-bar:before {
+    bottom: -8px;
+  }
+
+  .clock-icon-blue {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/clock-icon-blue.png);
+    width: 13px;
+    height: 13px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+  }
+
+  .progress-text {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  .carpeta-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/carpeta-icon.png);
+    width: 13px;
+    background-size: contain;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+  }
+
+  .audio-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/audio-icon.png);
+    width: 13px;
+    background-size: contain;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 11px;
+  }
+
+  .minivideo-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/minivideo-icon.png);
+    width: 13px;
+    background-size: contain;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 11px;
+  }
+
+  .level-pretit {
+    color: #b1b1b1;
+    font-size: 11px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
+  .level-tit {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 0px;
+  }
+
+  .general-pretit {
+    color: white;
+    font-size: 11px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .general-tit {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+
+  .stack-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/stack-icon.png);
+    width: 17px;
+    background-size: cover;
+    height: 14px;
+    margin-top: 2px;
+  }
+
+  .modules-head {
+    color: white !important;
+    margin-top: 1px;
+    margin-bottom: 31px;
+    margin-left: 8px;
+  }
+
+  .activities.grammar {
+    display: flex;
+
+    span {
+      font-size: 12px;
+      margin-left: 5px;
+      line-height: 1.5;
+    }
+  }
+  /*ESTILO MODAL*/
+  .main-view {
+    background: transparent;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: .5;
+    background-color: #333;
+  }
+
+  .modal_content {
+    position: absolute;
+    top: calc(40% - (40%/2));
+    left: 0;
+    right: 0;
+    width: 82vw;
+    padding: 10px;
+    z-index: 100;
+    margin: 0 auto;
+    padding: 10px;
+    color: #333;
+    background: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .result-title {
+    margin: 0 0 2px;
+    font-size: 2.4rem;
+    font-weight: normal;
+  }
+
+  .badge {
+    color: white;
+    border-radius: 3px;
+    width: 100%;
+  }
+
+  .lupa:before {
+    display: inline-block;
+    content: '';
+    width: 27px;
+    height: 27px;
+    background: url(../assets/img/elingua-sprite.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 8px;
+    background-position: 0px 1px;
+  }
+
+  .check-yes:after {
+    display: inline-block;
+    content: '';
+    width: 27px;
+    height: 27px;
+    background: url(../assets/img/elingua-sprite.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    background-position: 0px -26px;
+  }
+
+  .check-no:after {
+    display: inline-block;
+    content: '';
+    width: 27px;
+    height: 27px;
+    background: url(../assets/img/elingua-sprite.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    background-position: 0px -52px;
+  }
+}

@@ -1,0 +1,161 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Quiz
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h2 class="quiz-title">Grammar - Summer holidays</h2>
+  <ion-slides #slides>
+    <!--<ion-slide class="start-slide">
+      <button ion-button color="primary" (click)="nextSlide()">Start!</button>
+    </ion-slide>-->
+
+    <ion-slide *ngFor="let question of questions; let i = index;">
+      <ion-card>
+        <h3>Question {{i+1}}</h3>
+
+        <flash-card [isFlipped]="question.flashCardFlipped" [isSucced]="isSucced">
+          <div class="flash-card-front" [innerHTML]="question.flashCardFront"></div>
+          <div class="flash-card-back" [innerHTML]="question.flashCardBack"></div>
+        </flash-card>
+
+        <p class="question MB20">{{question.questionText}}</p>
+
+        <div class="radio-container" radio-group>
+
+          <ion-item *ngFor="let answer of question.answers; let i = index;">
+
+            <ion-label class=""><span class="badge">{{getCharacter(i)}}</span>{{answer.answer}}</ion-label>
+            <ion-radio (click)="selectAnswer(answer, question)" [checked]="answer.selected" [disabled]="hasAnswered"></ion-radio>
+
+          </ion-item>
+
+        </div>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <!--<h2>Final Score: {{score}}</h2>
+
+        <button (click)="restartQuiz()" ion-button full color="primary">Start Again</button>-->
+
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <p>Elementary - Opposites of adjectives</p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-8>
+                <span class="result-title text-level8">SCORE</span>
+              </ion-col>
+              <ion-col col-4>
+                <span class="result-title">{{score}} / {{questions?.length}}</span>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+        <ion-card [ngStyle]="{'background-color': score/questions?.length<0.5? 'rgba(255, 0, 0, 0.2)': 'rgba(0, 255, 0, 0.2)'}">
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <p *ngIf="score/questions?.length<0.5">< 50% - Test Failed</p>
+                <p *ngIf="score/questions?.length>=0.5">> 50% - Test Passed</p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-9>
+                <span class="result-title text-level8">PERCENTAGE</span>
+              </ion-col>
+              <ion-col col-3>
+                <span class="result-title">{{ (score  / questions?.length) | percent}}</span>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-6>
+                <ion-row class="MB3">
+                  <ion-col col-10>
+                    Right
+                  </ion-col>
+                  <ion-col col-2 text-center class="badge level8">
+                    {{score}}
+                  </ion-col>
+                </ion-row>
+                <ion-row class="MB3">
+                  <ion-col col-10>
+                    Wrong
+                  </ion-col>
+                  <ion-col col-2 text-center class="badge level8">
+                    {{questions?.length - score}}
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+              <ion-col col-6>
+                <ion-row class="MB3">
+                  <ion-col col-10>
+                    I don´t know
+                  </ion-col>
+                  <ion-col col-2 text-center class="badge level8">
+                    0
+                  </ion-col>
+                </ion-row>
+                <ion-row class="MB3">
+                  <ion-col col-10>
+                    Out of time
+                  </ion-col>
+                  <ion-col col-2 text-center class="badge level8">
+                    0
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-6 class="result-time-title">Total Time Test:</ion-col>
+              <ion-col col-3><span class="result-number text-level8">0</span>mins.</ion-col>
+              <ion-col col-3><span class="result-number text-level8">6</span>secs</ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+        <ion-card>
+          <ion-grid>
+            <ion-row class="result-table-header level8">
+              <ion-col text-center>Question</ion-col>
+              <ion-col text-center>Answer</ion-col>
+              <ion-col text-center>Correct</ion-col>
+            </ion-row>
+            <ion-row class="H27">
+              <ion-col class="lupa" text-center>1</ion-col>
+              <ion-col text-center>C</ion-col>
+              <ion-col class="check-yes" text-center>C</ion-col>
+            </ion-row>
+            <ion-row class="H27">
+              <ion-col class="lupa" text-center>2</ion-col>
+              <ion-col text-center>A</ion-col>
+              <ion-col class="check-no" text-center>C</ion-col>
+            </ion-row>
+            <ion-row class="H27">
+              <ion-col class="lupa" text-center>2</ion-col>
+              <ion-col text-center>B</ion-col>
+              <ion-col class="check-no" text-center>A</ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>

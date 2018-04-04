@@ -1,0 +1,13 @@
+{
+  "description": "<video controls='controls' preload='metadata' autoplay='autoplay' webkit-playsinline='webkit-playsinline' class='videoPlayer'><source src='assets/media/video/grocery.mp4' type='Video/mp4'/></video><p class='description'>Match words you hear in the section of the video with words that mean the same. Cick on the words in the list and take them to the corresponding gaps.</p>",
+  "words": [ "certain", "perhaps", "mend", "phone", "occur" ],
+  "questionHtml": [
+    "<ol>",
+    "<li>to repair... to <div id='box1' class='box'></div></li>",
+    "<li>to ring... to <div id='box2' class='box'></div></li>",
+    "<li>to happen... to <div id='box3' class='box'></div></li>",
+    "<li>maybe... <div id='box4' class='box'></div></li>",
+    "<li>sure... <div id='box5' class='box'></div></li>",
+    "</ol>"
+  ]
+}

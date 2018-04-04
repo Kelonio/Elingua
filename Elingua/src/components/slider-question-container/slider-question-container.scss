@@ -1,0 +1,119 @@
+slider-question-container {
+  .center {
+    text-align: center;
+  }
+
+  .content,
+  .item {
+    background: white;
+    color: black;
+  }
+
+  .MB3 {
+    margin-bottom: 3px;
+  }
+
+  .H27 {
+    height: 27px !important;
+    line-height: 22px;
+  }
+
+  ion-card.card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  ion-card.card .card {
+    margin: 0;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .result-table-header {
+    color: white;
+    font-size: 15px;
+  }
+
+  .result-number {
+    font-weight: 500;
+    font-size: 21px;
+    margin-right: 5px;
+  }
+
+  .result-time-title {
+    line-height: 29px;
+  }
+
+  ion-card.card .card .card-content {
+    padding: 2px;
+  }
+  /*ESTILO MODAL*/
+  .result-title {
+    margin: 0 0 2px;
+    font-size: 2.4rem;
+    font-weight: normal;
+  }
+
+  .myBadge {
+    color: white;
+    border-radius: 3px;
+    width: 100%;
+  }
+
+  .lupa:before {
+    display: inline-block;
+    content: '';
+    width: 27px;
+    height: 27px;
+    background: url(../assets/img/elingua-sprite.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 8px;
+    background-position: 0px 1px;
+  }
+
+  .check-yes:after {
+    display: inline-block;
+    content: '';
+    width: 27px;
+    height: 27px;
+    background: url(../assets/img/elingua-sprite.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    background-position: 0px -26px;
+  }
+
+  .check-no:after {
+    display: inline-block;
+    content: '';
+    width: 27px;
+    height: 27px;
+    background: url(../assets/img/elingua-sprite.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    background-position: 0px -52px;
+  }
+
+  .final-group-title {
+    color: orange;
+    margin-top: 10px !important;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-align: left;
+    border-bottom: 1px solid orange;
+    padding-bottom: 0.5rem;
+  }
+
+  .corregir-btn {
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+}

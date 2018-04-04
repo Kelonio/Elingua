@@ -1,0 +1,27 @@
+{
+  "questionText": "<p class='description'>2. The telephones at our company __________ by an electronic communications system.</p>",
+  "answers": [
+    {
+      "answer": "<span class='badge'>a</span> are answered",
+      "correct": true,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>b</span> answer",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>c</span> is answered",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>d</span> I don´t know",
+      "correct": false,
+      "selected": false
+    }
+  ]
+
+}
+

@@ -1,0 +1,187 @@
+page-home {
+  .center {
+    text-align: center;
+  }
+
+  .logo {
+    width: 25px;
+  }
+
+  .toolbar-background {
+    background: #fecf00 !important;
+  }
+
+  .toolbar-title span {
+    position: relative;
+    top: -7px;
+    color: white;
+    font-size: 17px;
+  }
+
+  .first-line {
+    display: flex;
+    margin-bottom: -10px;
+  }
+
+  .first-line p {
+    color: white;
+    font-size: 13px;
+    margin-left: 4px;
+    margin-top: 13px;
+  }
+
+  .first-line .quiz-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/quiz-icon.png);
+    width: 58px;
+    background-size: cover;
+    height: 35px;
+  }
+
+  .content {
+    background-color: #536d79;
+  }
+
+  .scroll-content {
+    padding: 1px !important;
+  }
+
+
+  ion-card {
+    position: relative;
+  }
+
+  .mycard-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(83, 109, 121, 0.50);
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .card-btn {
+    position: absolute;
+    bottom: 16px;
+    right: 8px;
+  }
+
+  .blue-card {
+    background-color: #28d4f9;
+    min-height: 130px;
+  }
+
+  .white {
+    color: white;
+  }
+
+  .black {
+    color: #333;
+  }
+
+  .grey {
+    color: rgb(83, 109, 121);
+  }
+
+  .card-subt {
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .card-tit {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .activities.grammar {
+    display: flex;
+    margin-top: 15px;
+
+    p {
+      color: white;
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+
+  .activities.grammar p {
+    color: white;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 4px;
+  }
+
+  .activities.progress {
+    display: flex;
+    margin-top: 15px;
+  }
+
+  .activities.progress p {
+    color: rgb(83, 109, 121);
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 1px;
+  }
+
+  .stack-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/stack-icon.png);
+    width: 19px;
+    background-size: cover;
+    height: 16px;
+  }
+
+  .stack-icon-blue {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/stack-icon-blue.png);
+    width: 19px;
+    background-size: cover;
+    height: 16px;
+  }
+
+  .clock-icon-blue {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/clock-icon-blue.png);
+    width: 19px;
+    background-size: cover;
+    height: 16px;
+  }
+
+  .grammar-btn {
+    position: absolute;
+    bottom: 7px;
+    right: 8px;
+  }
+
+  .white-card {
+    background-color: white;
+  }
+
+  span.progress-bar {
+    color: white;
+  }
+
+  span.progress-bar {
+    width: 100% !important;
+    max-width: 76px;
+    bottom: 59px;
+    right: 9px;
+  }
+
+  .button-round {
+    padding: 0px 12px;
+    font-size: 11px;
+  }
+
+  .dark-blue-btn {
+    background-color: #536d79;
+    color: white;
+  }
+}

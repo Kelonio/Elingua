@@ -1,0 +1,133 @@
+<ion-card>
+  <ion-card-content>
+    <ion-slides #slides>
+      <ion-slide *ngFor="let question of questions; let i = index;">
+        <h3 class="final-group-title">{{question.name}}</h3>
+        <!--<button (click)="nextSlide()" ion-button round class="card-btn" color="primary" *ngIf="i < questions.length">NEXT</button>-->
+        <div [ngSwitch]="question.type">
+          <question-drop-words *ngSwitchCase="'dropwords'" [question]="exercise"></question-drop-words>
+          <question-quiz *ngSwitchCase="'quiz'" [questions]="questions"></question-quiz>
+          <question-speech-recognition *ngSwitchCase="'recognition'" [exercise]="exercise"></question-speech-recognition>
+          <question-multiselect *ngSwitchCase="'multiselect'" [question]="question" [isContained]="true"></question-multiselect>
+          <question-radio *ngSwitchCase="'radio'" [question]="question" [isContained]="true" (nextEvent)="nextEvent($event)"></question-radio>
+
+          <h1 *ngSwitchDefault>Missing question</h1>
+        </div>
+        <!--<button (click)="nextSlide()" ion-button round class="corregir-btn" color="primary" *ngIf="i < questions.length">NEXT</button>-->
+      </ion-slide>
+
+      <ion-slide>
+        <h2 class="white">Final Score: 8</h2>
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <p>Elementary - Opposites of adjectives</p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-8>
+                <span class="result-title text-level8">SCORE</span>
+              </ion-col>
+              <ion-col col-4>
+                <span class="result-title">8 / 10</span>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <p>> 80% - Test Approved</p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-9>
+                <span class="result-title text-level8">PERCENTAGE</span>
+              </ion-col>
+              <ion-col col-3>
+                <span class="result-title">80%</span>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-6>
+                <ion-row class="MB3">
+                  <ion-col col-10>
+                    Right
+                  </ion-col>
+                  <ion-col col-2 text-center class="myBadge level8">
+                    8
+                  </ion-col>
+                </ion-row>
+                <ion-row class="MB3">
+                  <ion-col col-10>
+                    Wrong
+                  </ion-col>
+                  <ion-col col-2 text-center class="myBadge level8">
+                    1
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+              <ion-col col-6>
+                <ion-row class="MB3">
+                  <ion-col col-10>
+                    I don´t know
+                  </ion-col>
+                  <ion-col col-2 text-center class="myBadge level8">
+                    1
+                  </ion-col>
+                </ion-row>
+                <ion-row class="MB3">
+                  <ion-col col-10>
+                    Out of time
+                  </ion-col>
+                  <ion-col col-2 text-center class="myBadge level8">
+                    0
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-6 class="result-time-title">Total Time Test:</ion-col>
+              <ion-col col-3><span class="result-number text-level8">5</span>mins.</ion-col>
+              <ion-col col-3><span class="result-number text-level8">6</span>secs</ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+        <ion-card>
+          <ion-grid>
+            <ion-row class="result-table-header level8">
+              <ion-col text-center>Question</ion-col>
+              <ion-col text-center>Answer</ion-col>
+              <ion-col text-center>Correct</ion-col>
+            </ion-row>
+            <ion-row class="H27">
+              <ion-col class="lupa" text-center>1</ion-col>
+              <ion-col text-center>D</ion-col>
+              <ion-col class="check-yes" text-center>D</ion-col>
+            </ion-row>
+            <ion-row class="H27">
+              <ion-col class="lupa" text-center>2</ion-col>
+              <ion-col text-center>A</ion-col>
+              <ion-col class="check-no" text-center>C</ion-col>
+            </ion-row>
+            <ion-row class="H27">
+              <ion-col class="lupa" text-center>3</ion-col>
+              <ion-col text-center>A</ion-col>
+              <ion-col class="check-yes" text-center>A</ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </ion-card-content>
+</ion-card>

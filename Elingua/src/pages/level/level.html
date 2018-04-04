@@ -1,0 +1,40 @@
+<ion-header class="{{levelSelected.name | replaceBlanks}}">
+  <ion-navbar>
+    <ion-title>
+      Back to level selection
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="{{levelSelected.name | replaceBlanks}}" padding no-bounce>
+  
+  <p class="general-pretit">{{superlevel}}</p><!--Poner variable-->
+  <h2 class="general-tit"><span text-capitalize>{{levelSelected.name}}</span>: {{levelSelected.description}}</h2>
+  <div class="activities grammar">
+    <span class="stack-icon"></span>
+    <p class="modules-head">{{ modules?.length}} Modules</p>
+  </div>
+
+  <ion-card (click)="goToModule(x)" *ngFor="let x of modules; let i = index;">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <span class="{{levelSelected.name | replaceBlanks}} {{x.name}}-icon MR10"></span>
+        </ion-col>
+        <ion-col>
+          <p class="level-pretit">Module {{i+1}}/{{modules?.length}}</p>
+          <h2 class="level-tit" text-capitalize>{{x.name}}</h2>
+          <div class="activities grammar">
+            <span class="stack-icon-{{levelSelected.name | replaceBlanks}}"></span>
+            <span class="text-{{levelSelected.name | replaceBlanks}}">{{x.content.length}} {{x.contentType}}</span>
+          </div>
+        </ion-col>
+        <ion-col class="relative-col" col-3>
+          <span class="progress-bar percent-42 {{levelSelected.name | replaceBlanks}} transparent" text-center><span class="clock-icon-blue"></span><span class="progress-text">{{totalDuration(x.content)}} min</span></span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+
+</ion-content>

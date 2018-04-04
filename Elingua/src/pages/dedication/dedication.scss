@@ -1,0 +1,55 @@
+page-dedication {
+  .center {
+    text-align: center;
+  }
+
+  .logo {
+    width: 25px;
+  }
+
+  .toolbar-background {
+    background: #fecf00 !important;
+  }
+
+  .toolbar-title span {
+    position: relative;
+    top: -7px;
+    color: white;
+    font-size: 17px;
+  }
+  ion-content h2{
+    font-weight: 200;
+    margin-top: 20px !important;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .first-line {
+    display: flex;
+    margin-bottom: -10px;
+  }
+
+  .first-line p {
+    color: white;
+    font-size: 13px;
+    margin-left: 4px;
+    margin-top: 13px;
+  }
+
+  .first-line .quiz-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/quiz-icon.png);
+    width: 58px;
+    background-size: cover;
+    height: 35px;
+  }
+
+  .content {
+    background-color: #536d79;
+  }
+
+  .scroll-content {
+    padding: 1px !important;
+  }
+}

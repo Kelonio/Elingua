@@ -1,0 +1,82 @@
+<ion-header> 
+  <ion-nav id="nav" #content [root]="rootPage"></ion-nav><!-- esto saca el boton de menu-->
+  <ion-navbar>
+    <ion-icon name="menu" menuToggle left class="icon-menu"></ion-icon>
+    <ion-title text-center>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img class="logo" src="assets/img/logo.png" />
+            <span>Elingua APP</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="home" padding no-bounce>
+
+  <div class="first-line">
+    <span class="quiz-icon"></span>
+    <p>Quiz of the day</p>
+  </div>
+
+  <ion-card>
+    <ion-card-header text-center class="mycard-header">
+      Grammar: Summer Holidays
+    </ion-card-header>
+    <img src="assets/media/img/summer-bg.png" />
+    <button ion-button color="light" round class="card-btn"  (click)="startQuiz()">START</button>
+  </ion-card>
+
+  <ion-card class="blue-card">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-9>
+          <p class="white card-subt">Continue your Learning Program</p>
+          <h2 class="white card-tit"><span text-capitalize>{{data?.level.name}}</span>: {{data?.level.description}}</h2>
+          <div class="activities grammar">
+            <span class="stack-icon"></span>
+            <p>5 Activities</p>
+          </div>
+        </ion-col>
+        <ion-col>
+          <span class="progress-bar percent-20" text-center> 1/5 </span>
+
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <button ion-button color="light" round class="grammar-btn" (click)="goToLevel(data.level)">CONTINUE</button>
+  </ion-card>
+
+  <ion-card class="white-card">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-9>
+          <p class="grey card-subt">Check your Progress</p>
+          <h2 class="black card-tit">Dedication in the last 7 days</h2>
+          <div class="activities progress">
+            <span class="clock-icon-blue"></span>
+            <p>30 minutes</p>
+          </div>
+          <div class="activities progress">
+            <span class="stack-icon-blue"></span>
+            <p>Activities finished: 5</p>
+          </div>
+        </ion-col>
+        <ion-col>
+          <button ion-button color="light" round class="grammar-btn dark-blue-btn" (click)="goToDedication()">DETAILED PROGRESS</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  
+
+  
+
+  
+
+</ion-content>

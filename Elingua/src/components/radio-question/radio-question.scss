@@ -1,0 +1,92 @@
+question-radio {
+  .center {
+    text-align: center;
+  }
+
+  .BB {
+    border-bottom: 1px solid #333;
+  }
+
+  .P0 {
+    padding: 0px;
+  }
+
+  .like-card {
+    background-color: #fff;
+    padding: 0px;
+  }
+
+  .radio-container {
+    margin-top: 10px;
+  }
+
+  .radio-container .item {
+    margin-bottom: 8px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: calc(100% + 20px);
+    border: 1px solid transparent;
+  }
+
+  .radio-container .item .checkbox {
+    margin: 0;
+  }
+
+  .radio-container .item .checkbox .checkbox-icon {
+    display: none;
+  }
+
+  .radio-container .item .item-inner ion-label {
+    overflow: visible;
+    text-overflow: initial;
+    white-space: normal;
+    font-size: 1.4rem;
+    margin: 6px 0;
+    color: #444;
+    line-height: 1.6em;
+    padding-left: 35px;
+  }
+
+  .radio-container .item .item-inner ion-label .badge {
+    background-color: orange;
+    color: #fff;
+    border-radius: 15px;
+    min-width: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: 1px solid #d48900;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+  }
+
+  .radio-container .item.item-radio-checked {
+    background-color: #e5fafe;
+    border: 1px solid #acf0fc;
+    border-radius: 15px;
+  }
+
+  .card-content p.description {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  ion-card.card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .corregir-btn {
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+}

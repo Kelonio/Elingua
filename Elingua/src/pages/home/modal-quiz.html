@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Quit
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">        
+        <ion-icon name="md-close" ></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+ <ion-content>
+   <div *ngIf="surveyForm">
+     <form [formGroup]="surveyForm">
+       <div formArrayName="questions">
+         <div *ngFor="let question of questions; let i = index" [formGroupName]="i" padding-bottom>
+           <ion-row>
+             <ion-col col-10>
+               <h5>{{ question.text }}</h5>
+               <ng-container>
+                 <ion-list formArrayName="answer_ids">
+                   <div *ngFor="let choice of question.answers; let j = index">
+                     <ion-item>
+                       <ion-label style="white-space: normal;">{{ choice.id }}</ion-label>
+                       <ion-checkbox (ionChange)="onChange(choice.id, $event.checked, i)" value="choice.id"></ion-checkbox>
+                     </ion-item>
+                   </div>
+                 </ion-list>
+               </ng-container>
+             </ion-col>
+           </ion-row>
+         </div>
+       </div>
+     </form>
+   </div>
+
+   <!--<pre>{{surveyForm.value | json}}</pre>-->
+
+
+   <!--<p> This is the Quiz voy a crear el </p>
+   <form [formGroup]="todo" (ngSubmit)="logForm()">
+     <ion-item>
+       <ion-label>Todo</ion-label>
+       <ion-input type="text" formControlName="title"></ion-input>
+     </ion-item>
+     <ion-item>
+       <ion-label>Description</ion-label>
+       <ion-textarea formControlName="description"></ion-textarea>
+     </ion-item>
+
+     <button ion-button type="submit" [disabled]="!todo.valid">Submit</button>
+   </form>-->
+
+ </ion-content>

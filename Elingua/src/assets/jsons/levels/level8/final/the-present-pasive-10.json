@@ -1,0 +1,22 @@
+{
+  "questionText": "<p class='description'>10. Which sentence contains a defining relative clause?</p>",
+  "answers": [
+    {
+      "answer": "<span class='badge'>a</span> A French teacher is someone who teaches French.",
+      "correct": true,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>b</span> The French teacher, who lives next door to me, teaches French.",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>d</span> I don´t know",
+      "correct": false,
+      "selected": false
+    }
+  ]
+
+}
+

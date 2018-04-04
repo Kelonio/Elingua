@@ -1,0 +1,62 @@
+{
+	"questions": [
+
+    {
+      "flashCardFront": "<video controls='controls' preload='metadata' autoplay='autoplay' webkit-playsinline='webkit-playsinline' class='videoPlayer'><source src='assets/media/video/grocery.mp4' type='Video/mp4'/></video>",
+      "flashCardBack": "each mistake is a positive lesson",
+      "flashCardFlipped": false,
+      "questionText": "When you are in your twenties...",
+      "answers": [
+        {"answer": "each mistake is a positive lesson", "correct": true, "selected": false},
+        {"answer": "it's better if you're never wrong",  "correct": false, "selected": false},
+        {"answer": "to be mistaken is a failure", "correct": false, "selected": false}
+      ]
+    },
+    {
+      "flashCardFront": "<video controls='controls' preload='metadata' autoplay='autoplay' webkit-playsinline='webkit-playsinline' class='videoPlayer'><source src='assets/media/video/grocery.mp4' type='Video/mp4'/></video>",
+      "flashCardBack": "you can",
+      "flashCardFlipped": false,
+      "questionText": "You should study hard while...",
+      "answers": [
+        {
+          "answer": "you're in your twenties",
+          "correct": false,
+          "selected": false
+        },
+        {
+          "answer": "you can",
+          "correct": true,
+          "selected": false
+        },
+        {
+          "answer": "I don't know",
+          "correct": false,
+          "selected": false
+        }
+      ]
+    },
+    {
+			"flashCardFront": "<video controls='controls' preload='metadata' autoplay='autoplay' webkit-playsinline='webkit-playsinline' class='videoPlayer'><source src='assets/media/video/grocery.mp4' type='Video/mp4'/></video>",
+      "flashCardBack": "be an entrepreneur in a big company",
+      "flashCardFlipped": false,
+      "questionText": "When you're almost in your thirties you should...",
+      "answers": [
+        {"answer": "be an entrepreneur in a big company", "correct": true, "selected": false},
+        {"answer": "learn the process of how a big company runs",  "correct": false, "selected": false},
+        {"answer": "get in touch with the passion transmitted by small companies", "correct": false, "selected": false}
+			]
+		},
+    {
+			"flashCardFront": "<video controls='controls' preload='metadata' autoplay='autoplay' webkit-playsinline='webkit-playsinline' class='videoPlayer'><source src='assets/media/video/grocery.mp4' type='Video/mp4'/></video>",
+      "flashCardBack": "think vertically that you're working for yourself",
+      "flashCardFlipped": false,
+      "questionText": "Between your forties and your fifties you should...",
+      "answers": [
+        {"answer": "learn new thinks and get involved in the new generations", "correct": false, "selected": false},
+        {"answer": "think vertically that you're working for yourself",  "correct": true, "selected": false},
+        {"answer": "I don't know", "correct": false, "selected": false}
+			]
+		}
+
+	]
+}

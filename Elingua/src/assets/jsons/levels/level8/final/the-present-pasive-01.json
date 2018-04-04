@@ -1,0 +1,32 @@
+{
+  "questionText": "<p class='description'>1. These books ____________ a lot. Look at their dirty pages!</p>",
+  "answers": [
+    {
+      "answer": "<span class='badge'>a</span> is read",
+      "correct": true,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>b</span> are read",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>c</span> read",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>d</span> have read",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>e</span> I don´t know",
+      "correct": false,
+      "selected": false
+    }
+  ]
+
+}
+

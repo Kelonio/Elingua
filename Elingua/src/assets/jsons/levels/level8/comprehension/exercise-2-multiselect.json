@@ -1,0 +1,42 @@
+{
+  "questionText": "<video controls='controls' preload='metadata' autoplay='autoplay' webkit-playsinline='webkit-playsinline' class='videoPlayer'><source src='assets/media/video/grocery.mp4' type='Video/mp4'/></video><p class='description'>Watch the section of the video and click on the five adjectives that do not describe their neighbour.</p>",
+  "answers": [
+    {
+      "answer": "<span class='badge'>1</span> strange",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>2</span> sociable",
+      "correct": true,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>3</span> reserved",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>4</span> friendly",
+      "correct": true,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>5</span> well - dressed",
+      "correct": true,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>6</span> well known",
+      "correct": true,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>7</span> ugly",
+      "correct": true,
+      "selected": false
+    }
+  ]
+
+}
+

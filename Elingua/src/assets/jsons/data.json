@@ -1,0 +1,51 @@
+{
+  "level": {
+    "name": "level 8",
+    "description": "A domestic Accident",
+    "file": "level8.json"
+  },
+  "modules": {
+    "video": [
+      {
+        "name": "At the office",
+        "file": "grocery.mp4",
+        "length": 3,
+        "progress": 75
+      },
+      {
+        "name": "At the bar",
+        "file": "grocery.mp4",
+        "length": 2,
+        "progress": 0
+      }
+
+    ],
+    "grammar": [
+      {
+        "name": "Grammar Book",
+        "length": 15,
+        "progress": 100
+      },
+      {
+        "name": "The present pasive",
+        "length": 4,
+        "progress": 100
+      },
+      {
+        "name": "Basic relative clauses",
+        "length": 7,
+        "progress": 50
+      },
+      {
+        "name": "Offers and requests",
+        "length": 6,
+        "progress": 0
+      },
+      {
+        "name": "Revision",
+        "length": 12,
+        "progress": 0
+      }
+    ]
+  }
+}

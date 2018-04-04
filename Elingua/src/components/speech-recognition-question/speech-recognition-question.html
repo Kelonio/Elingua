@@ -1,0 +1,69 @@
+<ion-range min="1" max="5" step="1" [(ngModel)]="difficultySelected" color="secondary">
+  <ion-label range-left>Easy</ion-label>
+  <ion-label range-right>Difficult</ion-label>
+</ion-range>
+
+<!--Ejercicio Sin Hacer-->
+<ion-card *ngIf="sentenceIndex+1<=sentences?.length">
+  <ion-card-header>
+    <ion-row no-padding>
+      <ion-col>
+        <span class="sentence-number">Sentence {{sentenceIndex + 1}}/{{sentences?.length}}</span>
+      </ion-col>
+      <ion-col col-3>
+        <span class="progress-bar percent-{{(sentenceIndex /sentences?.length * 100)|number:'1.0-0'}} {{levelSelected.name | replaceBlanks}} transparent" text-center >&nbsp;</span>
+      </ion-col>
+    </ion-row>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-row no-padding>
+      <ion-col>
+        <h5 class="sentence">{{sentence}}</h5>
+      </ion-col>
+      <ion-col col-2 no-padding>
+        <button class="speech-btn" ion-button round (click)="startListening()" *ngIf="!isIos()">Start Listening</button>
+        <button class="speech-ios-btn" ion-button round (click)="startListeningios()" *ngIf="isIos()">Start Listening</button>
+      </ion-col>
+    </ion-row>
+
+    <!--filtro para sacar solo la primera-->
+    <div class="matched-sentence">
+      <span *ngFor="let match of matches | slice:0:1">{{ match }}</span>
+    </div>
+
+    <ion-row>
+      <ion-col>
+        <!-- <button class="speech-btn" ion-button round (click)="getPermission()" [ngClass]="{'hide-me': hasPermission == true, 'show-me': hasPermission == false}">Get Permission</button> -->
+        <button class="previous-btn" ion-button (click)="previousSentence()" *ngIf="sentenceIndex > 0">Previous</button>
+        <button class="next-btn" ion-button (click)="nextSentence()">Next</button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card-content>
+</ion-card>
+
+<!--Ejercicio Terminado-->
+<ion-card *ngIf="sentenceIndex+1>sentences?.length">
+  <ion-card-header>
+    Well done! Check your results
+  </ion-card-header>
+
+  <ion-card-content>
+    Results:<br />
+    {{sentenceRightCounter}} of {{sentences?.length}} sentences 
+  </ion-card-content>
+</ion-card>
+
+
+<div class="special-popup-container" [ngClass]="{'show-me': isClicked == true}">
+  <div class="special-popup">
+    <div class="center-it">
+      <h2>Listening...</h2>
+      <button ion-button ion-button class="stop-btn" color="light" round (click)="stopListening()" *ngIf="isIos()">Stop Listening</button>
+
+      <p>{{options?.language}}</p>
+    </div>
+  </div>
+</div>
+

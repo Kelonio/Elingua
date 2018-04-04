@@ -1,0 +1,30 @@
+<ion-header class="{{level?.name | replaceBlanks}}">
+
+  <ion-navbar>
+    <ion-title>Back to grammar</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="{{level?.name | replaceBlanks}}" padding>
+  <p class="general-pretit">Lesson {{index?.i}}/{{index?.t}}</p> <!--Hacer con variables-->
+  <h2 class="general-tit"><span text-capitalize>{{grammar?.name}}</span></h2>
+  <div class="exercise-type"><p class="exercise-head">{{questionType}}</p></div>
+
+  <div [ngSwitch]="questionType">
+    <div *ngSwitchCase="'book'">
+
+      <ion-card padding>
+        <div [innerHTML]="lesson | safeHtml" class="grammar-card-content"></div>
+      </ion-card>
+
+    </div>
+    <question-select *ngSwitchCase="'select'" [question]="question"></question-select>
+    <question-drop-words *ngSwitchCase="'dropwords'" [question]="question"></question-drop-words>
+    <question-multiselect *ngSwitchCase="'multiselect'" [question]="question"></question-multiselect>
+    <h1 *ngSwitchDefault>Missing question</h1>
+  </div>
+</ion-content>
+
+

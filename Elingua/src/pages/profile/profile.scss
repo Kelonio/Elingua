@@ -1,0 +1,37 @@
+page-profile {
+  .center {
+    text-align: center;
+  }
+
+  .toolbar-background {
+    background: #fecf00 !important;
+  }
+
+  .toolbar-title span {
+    position: relative;
+    top: -7px;
+    color: white;
+    font-size: 17px;
+  }
+
+  .content {
+    background-color: #536d79;
+  }
+
+  .scroll-content {
+    padding: 1px !important;
+  }
+
+  .toolbar-title {
+    text-align: center;
+    color: white;
+    font-size: 17px;
+  }
+
+  .white {
+    color: white;
+  }
+  .profile-card{
+    font-size: 12px;
+  }
+}

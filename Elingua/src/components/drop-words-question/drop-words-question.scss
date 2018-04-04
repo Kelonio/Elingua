@@ -1,0 +1,234 @@
+question-drop-words {
+  .center {
+    text-align: center;
+  }
+
+  .header {
+    height: 30px;
+    padding-left: 5px;
+    padding-top: 2px;
+    text-align: center;
+  }
+
+  .left {
+    border-right: 1px solid #000000;
+    padding: 0px;
+    overflow: scroll;
+  }
+
+  .right {
+    padding: 0px;
+    overflow: scroll;
+  }
+
+  .corregir-btn {
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .no-padding-positioning {
+    max-width: calc(100% + 32px);
+    width: calc(100% + 32px);
+    margin-left: -16px;
+  }
+
+  .drag-img-bg {
+    width: 100%;
+  }
+
+  .words {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    min-height: 40px;
+    overflow: hidden;
+
+
+    .drag-word {
+      background-color: white;
+      float: left;
+      margin-right: 5px;
+      padding: 5px;
+      line-height: 19px;
+    }
+  }
+  //  DRAG BOX POSITIONING
+  .box.drag-excersice {
+    margin: 0 10px;
+    background-color: #fff;
+    border: 1px solid #333;
+    width: 24%;
+    height: 14%;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .box.drag-excersice:before {
+    content: '';
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-left: 3vw solid transparent;
+    border-right: 3vw solid transparent;
+    border-top: 2vw solid #333;
+    font-size: 0px;
+    line-height: 0px;
+    position: absolute;
+    bottom: -2vw;
+    left: 8.2vw;
+  }
+
+  .box.drag-excersice:after {
+    content: '';
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-left: 3vw solid transparent;
+    border-right: 3vw solid transparent;
+    border-top: 2vw solid #fff;
+    font-size: 0px;
+    line-height: 0px;
+    position: absolute;
+    bottom: -1.7vw;
+    left: 8.2vw;
+  }
+  /*#box1.drag-excersice{
+    top: 94px;
+    left: 10px;
+  }
+  #box2.drag-excersice{
+    top: 79px;
+    left: 120px;
+  }
+  #box3.drag-excersice{
+    top: 4px;
+    left: 245px;
+  }
+  #box4.drag-excersice{
+    top: 142px;
+    left: 250px;
+  }*/
+  ion-card.card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  ion-card video {
+    margin: -13px -16px 13px -16px;
+    width: calc(100% + 32px);
+  }
+
+  .card-content p.description {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+
+  .words .drag-word {
+    background-color: #e5fafe;
+    border-radius: 20px;
+    border: 1px solid #acf0fc;
+    padding: 0.7rem 1rem;
+    margin-bottom: 10px;
+  }
+
+  .drag-word {
+    text-align: center;
+    line-height: 25px;
+    float: left;
+  }
+
+  .box .drag-word,
+  ol li .drag-word {
+    width: 100%;
+    float: left;
+  }
+
+  .box.drag-excersice .drag-word {
+    height: 100%;
+    line-height: 37px;
+  }
+
+  ol {
+    margin-top: 0;
+    list-style-type: lower-alpha;
+  }
+
+  ol li {
+    height: 40px;
+  }
+
+  .box {
+    margin: 0 10px;
+    background-color: #fff;
+    width: 90px;
+    height: 25px;
+    border: 1px solid #acf0fc;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+    top: 7px;
+  }
+
+
+
+  .result-popup-container {
+    display: none;
+    position: fixed;
+    top: -42px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh + 42px);
+    background-color: rgba(51, 51, 51, 0.72);
+    z-index: 999999;
+
+    .special-popup {
+      width: 80vw;
+      height: 60vw;
+      background-color: #fff;
+      position: relative;
+      top: calc(50vh - 30vw);
+      left: calc(50vw - 40vw);
+      border-radius: 2px;
+
+      .center-it {
+        text-align: center;
+
+        h2 {
+          font-size: 1.9rem;
+          font-weight: 400;
+          color: #333;
+          padding-top: 5vh !important;
+          margin-bottom: 6vh;
+        }
+
+        .stop-btn {
+          background-color: #29dbd1;
+          width: 65px;
+          height: 65px;
+          border-radius: 50%;
+          box-shadow: 1px 1px 4px rgba(0,0,0,.25);
+          background-image: url(../assets/img/microphone-icon.png);
+          background-repeat: no-repeat;
+          background-position: center center;
+          text-indent: -9999px;
+          padding: 0;
+          margin: 0;
+        }
+
+        p {
+          margin-top: 6vh;
+        }
+      }
+    }
+  }
+
+  .show-me {
+    display: block;
+  }
+}

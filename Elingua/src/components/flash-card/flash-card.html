@@ -1,0 +1,27 @@
+<!--<div class="flip-container" (click)="flip()" [class.flipped]="flipped">-->
+
+
+<div class="flip-container" [class.flipped]="flipCard">
+
+    <div class="flipper">
+
+      <div class="front">
+        <ng-content select=".flash-card-front"></ng-content>
+      </div>
+
+      <div class="back">
+        <section class='c-container'>
+          <div class='o-circle c-container__circle o-circle__sign--success' *ngIf="isSucced">
+            <div class='o-circle__sign'></div>
+          </div>
+          <div class='o-circle c-container__circle o-circle__sign--failure' *ngIf="!isSucced">
+            <div class='o-circle__sign'></div>
+          </div>
+        </section>
+        <ng-content select=".flash-card-back">
+        </ng-content>
+      </div>
+
+    </div>
+
+  </div>

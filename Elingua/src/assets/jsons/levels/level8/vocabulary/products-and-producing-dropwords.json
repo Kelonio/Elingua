@@ -1,0 +1,15 @@
+{
+  "description": "<p class='description'>Can you name the objects in the drawing?</p>",
+  "words": [ "barbacue", "watermelon", "bread", "bird" ],
+  "questionHtml": [
+
+    "<img class='drag-img-bg' src='assets/media/img/summer-bg.png'/>",
+    "<div id='box1' class='box drag-excersice' data-solution='barbacue' style='top: 23vw;left: 5.7vw;'></div>",
+    "<div id='box2' class='box drag-excersice' data-solution='bread' style='top: 20vw;left: 35vw;' ></div>",
+    "<div id='box3' class='box drag-excersice' data-solution='bird' style='top: 0vw;left: 62vw;'></div>",
+    "<div id='box4' class='box drag-excersice' data-solution='watermelon' style='top: 35vw; left: 67vw;'></div>"
+  ]
+}
+
+   
+ 

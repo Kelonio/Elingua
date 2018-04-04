@@ -1,0 +1,12 @@
+{
+  "description":"Esto es un test, batante lamentable",
+  "words": [ "hidalgo", "mancha", "etc" ],
+  "questionHtml": [
+    "<span> En un lugar de la </span>",
+    "<div id='box1' class='box'></div>",
+    "<span> cuyo nombre no quiero acordarme vivia un</span>",
+    "<div id='box2' class='box'></div>",
+    "<span> etc, etc, etc</span>",
+    "<div id='box3' class='box'></div>"
+  ]
+}

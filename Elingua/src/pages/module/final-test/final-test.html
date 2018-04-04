@@ -1,0 +1,18 @@
+<ion-header class="{{level?.name | replaceBlanks}}">
+  <ion-navbar>
+    <ion-title>
+      Back to Final Test
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="{{level?.name | replaceBlanks}}" padding>
+  <!--<p class="general-pretit">Exercise {{index?.i}}/{{index?.t}}</p>--> <!--Hacer con variables-->
+  <h2 class="general-tit"><span text-capitalize>{{test?.name}}</span></h2> 
+
+  <div [ngSwitch]="questionType">
+    <slider-question-container *ngSwitchCase="'container'" [questions]="content"></slider-question-container>
+    <!--<question-multiselect *ngSwitchCase="'multiselect'" [question]="question"></question-multiselect>-->
+    <h1 *ngSwitchDefault>Final Test Default</h1>
+  </div>
+</ion-content>

@@ -1,0 +1,27 @@
+{
+  "questionText": "<p class='description'>9. The cups are made of plastic and, therefore they __________.</p>",
+  "answers": [
+    {
+      "answer": "<span class='badge'>a</span> cannot be broken",
+      "correct": true,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>b</span> can't be broke",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>c</span> cannot be break",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>d</span> I don´t know",
+      "correct": false,
+      "selected": false
+    }
+  ]
+
+}
+

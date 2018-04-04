@@ -1,0 +1,39 @@
+{
+	"questions": [
+
+    {
+      "flashCardFront": "<img class='card-img' src='assets/img/watermelon.png' />",
+      "flashCardBack": "<span class=''>Watermelon</span>",
+      "flashCardFlipped": false,
+      "questionText": "What fruit is this?",
+      "answers": [
+        {"answer": "A watermelon", "correct": true, "selected": false},
+        {"answer": "A melon", "correct": false, "selected": false},
+        {"answer": "A peach", "correct": false, "selected": false}
+      ]
+    },
+		{
+			"flashCardFront": "<img class='card-img' src='assets/img/bbq.png' />",
+			"flashCardBack": "<span class=''>Barbacue</span>",
+			"flashCardFlipped": false,
+			"questionText": "What is this?",
+			"answers": [
+				{"answer": "A kitchen", "correct": false, "selected": false},
+				{"answer": "A barbacue", "correct": true, "selected": false},
+				{"answer": "A box", "correct": false, "selected": false}
+			]
+		},
+		{
+			"flashCardFront": "<img class='card-img' src='assets/img/water.png' />",
+			"flashCardBack": "<span class=''>Bottle of Water</span>",
+			"flashCardFlipped": false,
+			"questionText": "What is this?",
+			"answers": [
+				{"answer": "A can of water", "correct": false, "selected": false},
+				{"answer": "A bag of Water", "correct": false, "selected": false},
+				{"answer": "A bottle of Water", "correct": true, "selected": false}
+			]
+		}
+
+	]
+}

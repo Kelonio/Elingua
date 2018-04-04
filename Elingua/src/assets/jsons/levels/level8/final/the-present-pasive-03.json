@@ -1,0 +1,27 @@
+{
+  "questionText": "<p class='description'>3. The system __________ the calls to each extension automatically.</p>",
+  "answers": [
+    {
+      "answer": "<span class='badge'>a</span> tells",
+      "correct": true,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>b</span> transfers",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>c</span> are transferred",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>d</span> I don´t know",
+      "correct": false,
+      "selected": false
+    }
+  ]
+
+}
+

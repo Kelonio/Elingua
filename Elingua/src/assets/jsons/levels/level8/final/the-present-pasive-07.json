@@ -1,0 +1,27 @@
+{
+  "questionText": "<p class='description'>7. Andrea __________ a job every time she comes to my company.</p>",
+  "answers": [
+    {
+      "answer": "<span class='badge'>a</span> is offer",
+      "correct": true,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>b</span> offer",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>c</span> is offered",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>d</span> I don´t know",
+      "correct": false,
+      "selected": false
+    }
+  ]
+
+}
+

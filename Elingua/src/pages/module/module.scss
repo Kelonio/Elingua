@@ -1,0 +1,282 @@
+page-module {
+  .header::after {
+    display: none;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .toolbar-background,
+  .content {
+    background-color: #28d4f9;
+  }
+
+  .bar-button-default {
+    color: white;
+    margin-right: 0px;
+  }
+
+  .toolbar-title {
+    color: white;
+    font-size: 1.3rem;
+    padding-left: 0px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 5px;
+  }
+
+
+
+
+
+  .video-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/video-icon.png);
+    width: 50px;
+    background-size: cover;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .comprehension-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/comprehension-icon.png);
+    width: 50px;
+    background-size: cover;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .grammar-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/grammar-icon.png);
+    width: 50px;
+    background-size: cover;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .video-icon-white {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/video-icon-white.png);
+    width: 50px;
+    background-size: cover;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .comprehension-icon-white {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/comprehension-icon-white.png);
+    width: 50px;
+    background-size: cover;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .grammar-icon-white {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/grammar-icon-white.png);
+    width: 50px;
+    background-size: cover;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .vocabulary-icon-white {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/vocab-icon-white.png);
+    width: 50px;
+    background-size: cover;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .final-icon-white {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/test-icon-white.png);
+    width: 50px;
+    background-size: cover;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .vocab-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/vocab-icon.png);
+    width: 50px;
+    background-size: cover;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .test-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/test-icon.png);
+    width: 50px;
+    background-size: cover;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .stack-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/stack-icon.png);
+    width: 17px;
+    background-size: cover;
+    height: 14px;
+    margin-top: 2px;
+  }
+
+  .relative-col {
+    position: relative;
+  }
+
+  span.progress-bar:before {
+    background-color: #28d4f9;
+  }
+
+  span.progress-bar:after {
+    background-color: #b3b6b7;
+  }
+
+  span.progress-bar {
+    width: 100% !important;
+    right: 9px;
+    font-size: 11px;
+    color: grey;
+    bottom: calc(50% - 4px);
+    height: 14px;
+  }
+
+  span.progress-bar:after,
+  span.progress-bar:before {
+    bottom: -8px;
+  }
+
+  .clock-icon-blue {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/clock-icon-blue.png);
+    width: 13px;
+    height: 13px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+  }
+
+  .progress-text {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  .carpeta-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../../assets/img/carpeta-icon.png);
+    width: 13px;
+    background-size: contain;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+  }
+
+  .audio-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../../assets/img/audio-icon.png);
+    width: 13px;
+    background-size: contain;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 11px;
+  }
+
+  .minivideo-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../../assets/img/minivideo-icon.png);
+    width: 13px;
+    background-size: contain;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 11px;
+  }
+
+  .level-pretit {
+    color: #b1b1b1;
+    font-size: 11px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
+  .level-tit {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 0px;
+  }
+
+  .general-pretit {
+    color: white;
+    font-size: 11px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .general-tit {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    text-transform: capitalize;
+  }
+
+
+
+
+
+  .modules-head {
+    color: white !important;
+    margin-top: 3px;
+    margin-bottom: 31px;
+  }
+
+  .activities.grammar {
+    display: flex;
+
+    p {
+      color: #28d4f9;
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+
+  .exercise-head {
+    color: white !important;
+    margin-top: 3px;
+    margin-bottom: 31px;
+  }
+
+
+  .transparent {
+    background-color: transparent !important;
+  }
+}

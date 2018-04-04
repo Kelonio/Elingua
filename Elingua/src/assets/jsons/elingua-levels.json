@@ -1,0 +1,39 @@
+{
+  "elinguaLevels": [
+    {
+      "name": "Beginner",
+      "class": "beginner",
+      "description": "Entiende y utiliza expresiones cotidianas familiares y frases muy básicas. Puede presentarse, preguntar y contestar sobre datos personales. Puede interactuar de manera sencilla si se le habla despacio y con",
+      "levels": "0 - 3",
+      "certificate": "A1"
+    },
+    {
+      "name": "Elementary",
+      "class": "elementary",
+      "description": "Entiende frases y expresiones utilizadas con frecuencia relacionadas con áreas muy relevantes. Puede comunicar tareas sencillas y rutinarias que requieren un intercambio sencillo de información sobre asuntos rutinarios.",
+      "levels": "4 - 7",
+      "certificate": "A2"
+    },
+    {
+      "name": "Pre-Intermediate",
+      "class": "preintermediate",
+      "description": "Entiende la información importante de una conversación, presentación o texto. Capaz de manejar la mayoría de situaciones típicas a encontrarse en el mundo anglo-parlante. Puede escribir textos sencillos. Puede dar razones y",
+      "levels": "8 - 12",
+      "certificate": "B1"
+    },
+    {
+      "name": "Intermediate",
+      "class": "intermediate",
+      "description": "Entiende las ideas principales de textos complejos. Comunica con fluidez y espontaneidad con angloparlantes. Produce textos claros y puede explicar su punto de vista sobre asuntos de la",
+      "levels": "13 - 19",
+      "certificate": "B2"
+    },
+    {
+      "name": "Advanced",
+      "class": "advanced",
+      "description": "Entiende una amplia gama de textos largos y difíciles, y reconoce su significado implícito. Se expresa con fluidez y espontaneidad, sin grandes esfuerzos para encontrar la frase adecuada. Produce textos claros, estructurados y detallados.",
+      "levels": "20 - 25",
+      "certificate": "C1"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "questionText": "<p class='description'>8. This pair of jeans __________ at a temperature of up to 60º.</p>",
+  "answers": [
+    {
+      "answer": "<span class='badge'>a</span> can wash",
+      "correct": true,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>b</span> can washed",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>c</span> can be washed",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>d</span> I don´t know",
+      "correct": false,
+      "selected": false
+    }
+  ]
+
+}
+

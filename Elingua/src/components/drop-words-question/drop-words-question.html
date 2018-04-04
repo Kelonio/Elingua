@@ -1,0 +1,25 @@
+<ion-card>
+  <ion-card-content>
+
+    <div [innerHTML]="description | safeHtml"></div>
+
+    <div [dragula]='"prueba"' id="pregunta" class="words" [innerHTML]="wordsHtml | safeHtml"></div>
+
+    <div [innerHTML]="questionHtml | safeHtml" class="relative no-padding-positioning"></div>
+
+    <button ion-button color="light" class="corregir-btn" round (click)="corregir()">RESULTS</button><!--(click)="isClicked = !isClicked"-->
+    <!--{{isClicked}}-->
+  </ion-card-content>
+</ion-card>
+
+<!--<div class="result-popup-container" [ngClass]="{'show-me': isClicked == true}">
+  <div class="special-popup">
+    <div class="center-it">
+      <h2>Listening...</h2>
+      
+
+      <p>holahol</p>
+    </div>
+  </div>
+</div>-->
+

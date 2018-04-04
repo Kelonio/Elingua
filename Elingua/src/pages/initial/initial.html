@@ -1,0 +1,156 @@
+<ion-header>
+  <ion-nav id="nav" #content [root]="initialPage"></ion-nav><!-- esto saca el boton de menu-->
+  <ion-navbar>
+    <ion-icon name="menu" menuToggle left class="icon-menu"></ion-icon>
+    <ion-title text-center>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <span>Level Select</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="level" padding no-bounce>
+  <div *ngFor="let x of levels; let i = index;">
+    <!--<ion-card class="{{x.class}}-bg" (click)="goToSuperlevel('x.class')" >-->
+    <ion-card [ngClass]="getClass(x.class)" (click)="goToSuperlevel(x)">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p class="level-pretit">Levels: {{x.levels}}</p>
+            <h2 class="level-tit white">{{x.name}}</h2>
+          </ion-col>
+          <ion-col col-3>
+            <p text-right class="level-pretit">{{x.certificate}}</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="level-pretit long-text white">
+              {{x.description}}
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </div>
+</ion-content>
+
+
+  <!--<ion-content class="level" padding no-bounce>
+
+    <ion-card class="beginner-bg" (click)="goToSuperlevel('beginner')">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p class="level-pretit">Levels: 0 - 3</p>
+            <h2 class="level-tit white">Beginner</h2>
+          </ion-col>
+          <ion-col col-3>
+            <p text-right class="level-pretit">A1</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="level-pretit long-text white">
+              Entiende y utiliza expresiones cotidianas familiares y frases muy básicas. Puede presentarse, preguntar y contestar sobre datos personales. Puede interactuar de manera senciallasi se le habla despacio y con
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+
+    <ion-card class="elementary-bg" (click)="goToSuperlevel('elementary')">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p class="level-pretit">Levels: 4 - 7</p>
+            <h2 class="level-tit white">Elementary</h2>
+
+          </ion-col>
+          <ion-col col-3>
+            <p text-right class="level-pretit">A2</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="level-pretit long-text white">
+              Entiende y utiliza expresiones cotidianas familiares y frases muy básicas. Puede presentarse, preguntar y contestar sobre datos personales. Puede interactuar de manera senciallasi se le habla despacio y con
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+
+    <ion-card class="preintermediate-bg" (click)="goToSuperlevel('preintermediate')">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p class="level-pretit">Levels: 8 - 12</p>
+            <h2 class="level-tit white">Pre-Intermediate</h2>
+
+          </ion-col>
+          <ion-col col-3>
+            <p text-right class="level-pretit">B1</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="level-pretit long-text white">
+              Entiende y utiliza expresiones cotidianas familiares y frases muy básicas. Puede presentarse, preguntar y contestar sobre datos personales. Puede interactuar de manera senciallasi se le habla despacio y con
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+
+    <ion-card class="intermediate-bg" (click)="goToSuperlevel('intermediate')">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p class="level-pretit">Levels: 13 - 19</p>
+            <h2 class="level-tit white">Intermediate</h2>
+
+          </ion-col>
+          <ion-col col-3>
+            <p text-right class="level-pretit">B2</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="level-pretit long-text white">
+              Entiende y utiliza expresiones cotidianas familiares y frases muy básicas. Puede presentarse, preguntar y contestar sobre datos personales. Puede interactuar de manera senciallasi se le habla despacio y con
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+
+    <ion-card class="advanced-bg" (click)="goToSuperlevel('advanced')">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p class="level-pretit">Levels: 20 - 25</p>
+            <h2 class="level-tit white">Advanced</h2>
+
+          </ion-col>
+          <ion-col col-3>
+            <p text-right class="level-pretit">C1</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="level-pretit long-text white">
+              Entiende y utiliza expresiones cotidianas familiares y frases muy básicas. Puede presentarse, preguntar y contestar sobre datos personales. Puede interactuar de manera senciallasi se le habla despacio y con
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+
+  </ion-content>
+-->

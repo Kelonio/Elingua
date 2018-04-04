@@ -1,0 +1,44 @@
+<ion-menu [content]="mycontent" class="dark-bg"  [swipeEnabled]="false">
+
+  <ion-content>
+
+    <ion-grid>
+
+      <ion-row>
+        <ion-col col-1>
+          <span class="preferences-icon" menuClose (click)="openPage(homePage)"></span>
+        </ion-col>
+        <ion-col text-center>
+          <span class="profile-icon MT35" menuClose (click)="openPage(profilePage)"></span>
+          <p class="profile-name" menuClose (click)="openPage(profilePage)">Alfonso Feu</p>
+        </ion-col>
+        <ion-col col-1>
+          <span class="logout-icon" menuClose (click)="openPage(homePage)"></span>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-list class="menu-list">
+            <span ion-item menuClose (click)="openPage(homePage)"><span class="home-icon"></span>Home</span>
+            <span ion-item menuClose (click)="openPage(initialPage)"><span class="icon-levels"></span>Level Select</span>
+            <span ion-item menuClose (click)="openPage(homePage)"><span class="about-icon"></span>About</span>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+    
+    
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav #mycontent [root]="rootPage"></ion-nav>

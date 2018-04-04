@@ -1,0 +1,27 @@
+{
+  "questionText": "<p class='description'>4. Each telephone has an LED light which __________ when a call comes in.</p>",
+  "answers": [
+    {
+      "answer": "<span class='badge'>a</span> light",
+      "correct": true,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>b</span> is switched",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>c</span> is lit",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>d</span> I don´t know",
+      "correct": false,
+      "selected": false
+    }
+  ]
+
+}
+

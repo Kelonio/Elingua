@@ -1,0 +1,27 @@
+{
+  "questionText": "<p class='description'>5. If someone does not want to answer a call, a message __________ asking the caller to ring back later.</p>",
+  "answers": [
+    {
+      "answer": "<span class='badge'>a</span> play",
+      "correct": true,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>b</span> speaks",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>c</span> is played",
+      "correct": false,
+      "selected": false
+    },
+    {
+      "answer": "<span class='badge'>d</span> I don´t know",
+      "correct": false,
+      "selected": false
+    }
+  ]
+
+}
+

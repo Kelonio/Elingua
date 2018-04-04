@@ -1,0 +1,950 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+/*SIZES*/
+.MR10 {
+  margin-right: 10px !important;
+}
+.MT10 {
+  margin-top: 10px !important;
+}
+.ML10 {
+  margin-left: 10px !important;
+}
+
+.relative {
+  position: relative;
+}
+
+.beginner-bg {
+  background-color: #8dda72 !important;
+}
+
+.elementary-bg {
+  background-color: #32babc !important;
+}
+
+.preintermediate-bg {
+  background-color: #28d4f9 !important;
+}
+
+.intermediate-bg {
+  background-color: #4c80e0 !important;
+}
+
+.advanced-bg {
+  background-color: #ea75db !important;
+}
+
+span.progress-bar {
+  position: absolute;
+  height: 20px;
+  display: inline-block;
+}
+
+.icon-menu {
+  display: inline-block;
+  font-size: 3rem;
+  color: white;
+  margin-left: 4px;
+  position: relative;
+  z-index: 9999;
+}
+
+.bar-button {
+  position: relative;
+  z-index: 9999;
+}
+
+span.progress-bar:after {
+  content: '';
+  height: 3px;
+  background-color: #0098b9;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: -8px;
+  border-radius: 25px;
+}
+
+span.progress-bar:before {
+  content: '';
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  z-index: 2;
+  border-radius: 25px;
+}
+
+/*table result*/
+.result-table-header {
+  color: white;
+  font-size: 15px;
+}
+
+.result-number {
+  font-weight: 500;
+  font-size: 21px;
+  margin-right: 5px;
+}
+
+.result-time-title {
+  line-height: 29px;
+}
+
+
+
+
+/*span.percent-0:before {width: 0%;}
+  span.percent-1:before {width: 1%;}
+  span.percent-2:before {width: 2%;}
+  span.percent-3:before {width: 3%;}
+  span.percent-4:before {width: 4%;}
+  span.percent-5:before {width: 5%;}
+  span.percent-6:before {width: 6%;}
+  span.percent-7:before {width: 7%;}
+  span.percent-8:before {width: 8%;}
+  span.percent-9:before {width: 9%;}
+  span.percent-10:before {width: 10%;}
+  span.percent-11:before {width: 11%;}
+  span.percent-12:before {width: 12%;}
+  span.percent-13:before {width: 13%;}
+  span.percent-14:before {width: 14%;}
+  span.percent-15:before {width: 15%;}
+  span.percent-16:before {width: 16%;}
+  span.percent-17:before {width: 17%;}
+  span.percent-18:before {width: 18%;}
+  span.percent-19:before {width: 19%;}
+  span.percent-20:before {width: 20%;}
+  span.percent-21:before {width: 21%;}
+  span.percent-22:before {width: 22%;}
+  span.percent-23:before {width: 23%;}
+  span.percent-24:before {width: 24%;}
+  span.percent-25:before {width: 25%;}
+  span.percent-26:before {width: 26%;}
+  span.percent-27:before {width: 27%;}
+  span.percent-28:before {width: 28%;}
+  span.percent-29:before {width: 29%;}
+  span.percent-30:before {width: 30%;}
+  span.percent-31:before {width: 31%;}
+  span.percent-32:before {width: 32%;}
+  span.percent-33:before {width: 33%;}
+  span.percent-34:before {width: 34%;}
+  span.percent-35:before {width: 35%;}
+  span.percent-36:before {width: 36%;}
+  span.percent-37:before {width: 37%;}
+  span.percent-38:before {width: 38%;}
+  span.percent-39:before {width: 39%;} 
+  span.percent-40:before {width: 40%;} 
+  span.percent-41:before {width: 41%;} 
+  span.percent-42:before {width: 42%;} 
+  span.percent-43:before {width: 43%;} 
+  span.percent-44:before {width: 44%;} 
+  span.percent-45:before {width: 45%;} 
+  span.percent-46:before {width: 46%;} 
+  span.percent-47:before {width: 47%;} 
+  span.percent-48:before {width: 48%;} 
+  span.percent-49:before {width: 49%;} 
+  span.percent-50:before {width: 50%;} 
+  span.percent-51:before {width: 51%;} 
+  span.percent-52:before {width: 52%;} 
+  span.percent-53:before {width: 53%;} 
+  span.percent-54:before {width: 54%;} 
+  span.percent-55:before {width: 55%;} 
+  span.percent-56:before {width: 56%;} 
+  span.percent-57:before {width: 57%;} 
+  span.percent-58:before {width: 58%;} 
+  span.percent-59:before {width: 59%;} 
+  span.percent-60:before {width: 60%;} 
+  span.percent-61:before {width: 61%;} 
+  span.percent-62:before {width: 62%;} 
+  span.percent-63:before {width: 63%;} 
+  span.percent-64:before {width: 64%;} 
+  span.percent-65:before {width: 65%;} 
+  span.percent-66:before {width: 66%;} 
+  span.percent-67:before {width: 67%;} 
+  span.percent-68:before {width: 68%;} 
+  span.percent-69:before {width: 69%;} 
+  span.percent-70:before {width: 70%;} 
+  span.percent-71:before {width: 71%;} 
+  span.percent-72:before {width: 72%;} 
+  span.percent-73:before {width: 73%;} 
+  span.percent-74:before {width: 74%;} 
+  span.percent-75:before {width: 75%;} 
+  span.percent-76:before {width: 76%;} 
+  span.percent-77:before {width: 77%;} 
+  span.percent-78:before {width: 78%;} 
+  span.percent-79:before {width: 79%;} 
+  span.percent-80:before {width: 80%;} 
+  span.percent-81:before {width: 81%;} 
+  span.percent-82:before {width: 82%;} 
+  span.percent-83:before {width: 83%;} 
+  span.percent-84:before {width: 84%;} 
+  span.percent-85:before {width: 85%;} 
+  span.percent-86:before {width: 86%;} 
+  span.percent-87:before {width: 87%;} 
+  span.percent-88:before {width: 88%;} 
+  span.percent-89:before {width: 89%;} 
+  span.percent-90:before {width: 90%;} 
+  span.percent-91:before {width: 91%;} 
+  span.percent-92:before {width: 92%;} 
+  span.percent-93:before {width: 93%;} 
+  span.percent-94:before {width: 94%;} 
+  span.percent-95:before {width: 95%;} 
+  span.percent-96:before {width: 96%;} 
+  span.percent-97:before {width: 97%;} 
+  span.percent-98:before {width: 98%;} 
+  span.percent-99:before {width: 99%;} 
+  span.percent-100:before {width: 100%;  background-color: #68cc6d;}*/
+
+
+
+span[class^='level'] {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  margin-top: 5px;
+}
+
+/*
+
+.level0,
+.level1,
+.level2,
+.level3,
+.level0 ion-navbar.toolbar .toolbar-background-md,
+.level1 ion-navbar.toolbar .toolbar-background-md,
+.level2 ion-navbar.toolbar .toolbar-background-md,
+.level3 ion-navbar.toolbar .toolbar-background-md,
+.beginner,
+.beginner ion-navbar.toolbar .toolbar-background-md{
+  background-color: #8dda72;
+}
+.level4,
+.level5,
+.level6,
+.level7,
+.level4 ion-navbar.toolbar .toolbar-background-md,
+.level5 ion-navbar.toolbar .toolbar-background-md,
+.level6 ion-navbar.toolbar .toolbar-background-md,
+.level7 ion-navbar.toolbar .toolbar-background-md {
+  background-color: #32babc;
+}
+.level8,
+.level9,
+.level10,
+.level11,
+.level12,
+.level8 ion-navbar.toolbar .toolbar-background-md,
+.level9 ion-navbar.toolbar .toolbar-background-md,
+.level10 ion-navbar.toolbar .toolbar-background-md,
+.level11 ion-navbar.toolbar .toolbar-background-md,
+.level12 ion-navbar.toolbar .toolbar-background-md {
+  background-color: #28d4f9;
+}
+.level13,
+.level14,
+.level15,
+.level16,
+.level17,
+.level18,
+.level19,
+.level13 ion-navbar.toolbar .toolbar-background-md,
+.level14 ion-navbar.toolbar .toolbar-background-md,
+.level15 ion-navbar.toolbar .toolbar-background-md,
+.level16 ion-navbar.toolbar .toolbar-background-md,
+.level17 ion-navbar.toolbar .toolbar-background-md,
+.level18 ion-navbar.toolbar .toolbar-background-md,
+.level19 ion-navbar.toolbar .toolbar-background-md {
+  background-color: #4c80e0;
+}
+.level20,
+.level21,
+.level22,
+.level23,
+.level24,
+.level25,
+.level20 ion-navbar.toolbar .toolbar-background-md,
+.level21 ion-navbar.toolbar .toolbar-background-md,
+.level22 ion-navbar.toolbar .toolbar-background-md,
+.level23 ion-navbar.toolbar .toolbar-background-md,
+.level24 ion-navbar.toolbar .toolbar-background-md,
+.level25 ion-navbar.toolbar .toolbar-background-md {
+  background-color: #ea75db;
+}
+
+.text-level0,
+.text-level1,
+.text-level2,
+.text-level3 {
+  color: #8dda72;
+}
+
+.text-level4,
+.text-level5,
+.text-level6,
+.text-level7 {
+  color: #32babc;
+}
+
+.text-level8,
+.text-level9,
+.text-level10,
+.text-level11,
+.text-level12 {
+  color: #28d4f9;
+}
+
+.text-level13,
+.text-level14,
+.text-level15,
+.text-level16,
+.text-level17,
+.text-level18,
+.text-level19 {
+  color: #4c80e0;
+}
+
+.text-level20,
+.text-level21,
+.text-level22,
+.text-level23,
+.text-level24,
+.text-level25 {
+  color: #ea75db;
+}*/
+
+
+/*MODALES PEQUEÑOS*/
+modal-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media not all and (min-height: 600px) and (min-width: 768px) {
+  ion-modal ion-backdrop {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-height: 0px) and (min-width: 0px) {
+  .modal-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+
+
+
+
+.bar-button-default {
+  color: white;
+}
+
+.beginner,
+.beginner ion-navbar.toolbar .toolbar-background {
+  background-color: #8dda72;
+}
+
+.elementary,
+.elementary ion-navbar.toolbar .toolbar-background {
+  background-color: #32babc;
+}
+
+.preintermediate,
+.preintermediate ion-navbar.toolbar .toolbar-background {
+  background-color: #28d4f9;
+}
+
+.intermediate,
+.intermediate ion-navbar.toolbar .toolbar-background {
+  background-color: #4c80e0;
+}
+
+.advanced,
+.advanced ion-navbar.toolbar .toolbar-background {
+  background-color: #ea75db;
+}
+
+.toolbar-title {
+  color: white;
+  font-size: 17px;
+}
+
+
+.video-icon {
+  content: '';
+  display: inline-block;
+  background-image: url(../assets/img/video-icon-in.png);
+  width: 50px;
+  background-size: cover;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.comprehension-icon {
+  content: '';
+  display: inline-block;
+  background-image: url(../assets/img/comprehension-icon-in.png);
+  width: 50px;
+  background-size: cover;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.grammar-icon {
+  content: '';
+  display: inline-block;
+  background-image: url(../assets/img/grammar-icon-in.png);
+  width: 50px;
+  background-size: cover;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.vocabulary-icon {
+  content: '';
+  display: inline-block;
+  background-image: url(../assets/img/vocab-icon-in.png);
+  width: 50px;
+  background-size: cover;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.final-icon {
+  content: '';
+  display: inline-block;
+  background-image: url(../assets/img/test-icon-in.png);
+  width: 50px;
+  background-size: cover;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.stack-icon {
+  content: '';
+  display: inline-block;
+  background-image: url(../assets/img/stack-icon.png);
+  width: 19px;
+  background-size: cover;
+  height: 16px;
+}
+
+.preferences-icon {
+  content: '';
+  display: inline-block;
+  background-image: url(../assets/img/preferences-icon.png);
+  width: 20px;
+  background-size: cover;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.logout-icon {
+  float: right;
+  content: '';
+  display: inline-block;
+  background-image: url(../assets/img/logout-icon.png);
+  width: 20px;
+  background-size: cover;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.profile-icon {
+  content: '';
+  display: inline-block;
+  background-image: url(../assets/img/profile.png);
+  width: 50px;
+  background-size: cover;
+  height: 50px;
+}
+
+.MT35 {
+  margin-top: 35px;
+}
+
+.profile-name:after {
+  content: '>';
+  display: inline-block;
+  font-size: 19px;
+  position: relative;
+  top: 2px;
+  right: -16px;
+}
+
+.stack-icon {
+  content: '';
+  display: inline-block;
+  background-image: url(../assets/img/stack-icon.png);
+  width: 17px;
+  background-size: cover;
+  height: 14px;
+  margin-top: 2px;
+}
+
+.home-icon {
+  content: '';
+  display: inline-block;
+  background-image: url(../assets/img/home-icon.png);
+  width: 20px;
+  background-size: cover;
+  height: 20px;
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+}
+
+.icon-levels {
+  content: '';
+  display: inline-block;
+  background-image: url(../assets/img/levels-icon.png);
+  width: 20px;
+  background-size: cover;
+  height: 20px;
+  position: relative;
+  top: 4px;
+  margin-right: 10px;
+}
+
+.about-icon {
+  content: '';
+  display: inline-block;
+  background-image: url(../assets/img/about-icon.png);
+  width: 20px;
+  background-size: cover;
+  height: 20px;
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+}
+
+.menu-list .label {
+  font-size: 14px;
+}
+
+.dark-bg .menu-inner .content,
+.dark-bg .menu-inner .content .scroll-content .item {
+  background: #536d79;
+  color: white;
+}
+
+.black {
+  color: #333;
+}
+
+.white {
+  color: white;
+}
+
+video {
+  width: 100%;
+}
+
+span[class^="stack-icon-level"] {
+  content: '';
+  display: inline-block;
+  width: 17px;
+  background-size: cover;
+  height: 14px;
+  margin-top: 2px;
+}
+
+.stack-icon-beginner {
+  content: '';
+  display: inline-block;
+  width: 17px;
+  background-size: cover;
+  height: 14px;
+  margin-top: 2px;
+  background-image: url(../assets/img/stack-icon-beginner.png);
+}
+
+.stack-icon-elementary {
+  content: '';
+  display: inline-block;
+  width: 17px;
+  background-size: cover;
+  height: 14px;
+  margin-top: 2px;
+  background-image: url(../assets/img/stack-icon-elementary.png);
+}
+
+.stack-icon-preintermediate {
+  content: '';
+  display: inline-block;
+  width: 17px;
+  background-size: cover;
+  height: 14px;
+  margin-top: 2px;
+  background-image: url(../assets/img/stack-icon-preintermediate.png);
+}
+
+.stack-icon-intermediate {
+  content: '';
+  display: inline-block;
+  width: 17px;
+  background-size: cover;
+  height: 14px;
+  margin-top: 2px;
+  background-image: url(../assets/img/stack-icon-intermediate.png);
+}
+
+.stack-icon-advanced {
+  content: '';
+  display: inline-block;
+  width: 17px;
+  background-size: cover;
+  height: 14px;
+  margin-top: 2px;
+  background-image: url(../assets/img/stack-icon-advanced.png);
+}
+
+.card .text-beginner {
+  color: #8dda72;
+}
+
+.card .text-elementary {
+  color: #32babc;
+}
+
+.card .text-preintermediate {
+  color: #28d4f9;
+}
+
+.card .text-intermediate {
+  color: #4c80e0;
+}
+
+.card .text-advanced {
+  color: #ea75db;
+}
+
+
+$beginner: #8dda72;
+$elementary: #32babc;
+$pre-intermediate: #28d4f9;
+$intermediate: #4c80e0;
+$advance: #ea75db;
+
+$unit: '%';
+
+%bg-beginner {background-color: $beginner;}
+%bg-elementary {background-color: $elementary;}
+%bg-pre-intermediate {background-color: $pre-intermediate;}
+%bg-intermediate {background-color: $intermediate;}
+%bg-advance {background-color: $advance;}
+
+%no-border {border: none;}
+
+%color-beginner {color: $beginner;}
+%color-elementary {color: $elementary;}
+%color-pre-intermediate {color: $pre-intermediate;}
+%color-intermediate {color: $intermediate;}
+%color-advance {color: $advance;}
+
+%stack-beginner {background-image: url(../assets/img/stack-icon-beginner.png);}
+%stack-elementary {background-image: url(../assets/img/stack-icon-elementary.png);}
+%stack-preintermediate {background-image: url(../assets/img/stack-icon-preintermediate.png);}
+%stack-intermediate {background-image: url(../assets/img/stack-icon-intermediate.png);}
+%stack-advanced {background-image: url(../assets/img/stack-icon-advanced.png);}
+
+
+
+
+@for $i from 0 through 3 {
+  .level#{$i} {@extend %bg-beginner;};
+  .text-level#{$i} {@extend %color-beginner;};
+  .progress-bar.level#{$i}:before {@extend %bg-beginner;};
+  .progress-bar.beginner:before {@extend %bg-beginner;};
+  .level#{$i} ion-navbar.toolbar .toolbar-background {@extend %bg-beginner;};
+  .level#{$i} ion-navbar.toolbar .toolbar-background {@extend %no-border;};
+  .stack-icon-level#{$i} {@extend %stack-beginner;};
+}
+
+@for $i from 4 through 7 {
+  .level#{$i} {@extend %bg-elementary;};
+  .text-level#{$i} {@extend %color-elementary;};
+  .progress-bar.level#{$i}:before {@extend %bg-elementary;};
+  .progress-bar.elementary:before {@extend %bg-elementary;};
+  .level#{$i} ion-navbar.toolbar .toolbar-background {@extend %bg-elementary;};
+  .level#{$i} ion-navbar.toolbar .toolbar-background {@extend %no-border;};
+  .stack-icon-level#{$i} {@extend %stack-elementary;};
+}
+
+@for $i from 8 through 12 {
+  .level#{$i} { @extend %bg-pre-intermediate;};
+  .text-level#{$i} {@extend %color-pre-intermediate;};
+  .progress-bar.level#{$i}:before {@extend %bg-pre-intermediate;};
+  .progress-bar.preintermediate:before {@extend %bg-pre-intermediate;};
+  .level#{$i} ion-navbar.toolbar .toolbar-background {@extend %bg-pre-intermediate;};
+  .level#{$i} ion-navbar.toolbar .toolbar-background {@extend %no-border;};
+  .stack-icon-level#{$i} {@extend %stack-preintermediate;};
+}
+
+@for $i from 13 through 19 {
+  .level#{$i} {@extend %bg-intermediate;};
+  .text-level#{$i} {@extend %color-intermediate;};
+  .progress-bar.level#{$i}:before {@extend %bg-intermediate;};
+  .progress-bar.intermediate:before {@extend %bg-intermediate;};
+  .level#{$i} ion-navbar.toolbar .toolbar-background {@extend %bg-intermediate;};
+  .level#{$i} ion-navbar.toolbar .toolbar-background {@extend %no-border;};
+  .stack-icon-level#{$i} {@extend %stack-intermediate;};
+}
+
+@for $i from 20 through 25 {
+  .level#{$i} {@extend %bg-advance;};
+  .text-level#{$i} {@extend %color-advance;};
+  .progress-bar.level#{$i}:before {@extend %bg-advance;};
+  .progress-bar.advanced:before {@extend %bg-advance; };
+  .level#{$i} ion-navbar.toolbar .toolbar-background {@extend %bg-advance;};
+  .level#{$i} ion-navbar.toolbar .toolbar-background {@extend %no-border;};
+  .stack-icon-level#{$i} {@extend %stack-advanced;};
+}
+[class^='text-level'] {
+  margin-left: 8px;
+  font-size: 13px;
+  padding-top: 1px;
+}
+
+
+@for $i from 0 through 100 {
+  span.percent-#{$i}:before { width: #{$i}#{$unit}};
+}
+
+.transparent {
+  background-color: transparent !important;
+}
+.item-block{
+  min-height: 3rem;
+}
+
+/* ma aclro*/
+.general-pretit {
+  color: white;
+  font-size: 11px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.general-tit {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  text-transform: capitalize;
+}
+
+.modules-head {
+  color: white !important;
+  margin-top: 3px;
+  margin-bottom: 31px;
+}
+
+.exercise-head {
+  color: white !important;
+  margin-top: 3px;
+  margin-bottom: 31px;
+  text-transform: capitalize;
+}
+
+
+
+
+
+
+
+ /*=======================
+         O-Circle
+  =========================*/
+  .flip-container.flipped .flipper .back .flash-card-back .o-circle {
+    display: flex;
+    width: 10.555rem;
+    height: 10.555rem;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 50%;
+    animation: circle-appearance .8s ease-in-out 1 forwards, set-overflow .1s 1.1s forwards;
+  }
+
+  .flip-container.flipped .flipper .back .flash-card-back .c-container__circle {
+    margin: 0 auto 5.5rem;
+  }
+  /*=======================
+      C-Circle Sign
+  =========================*/
+  .flip-container.flipped .flipper .back .flash-card-back .o-circle__sign {
+    position: relative;
+    opacity: 0;
+    background: #fff;
+    animation-duration: .8s;
+    animation-delay: .2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .flip-container.flipped .flipper .back .flash-card-back .o-circle__sign::before,
+  .flip-container.flipped .flipper .back .flash-card-back .o-circle__sign::after {
+    content: "";
+    position: absolute;
+    background: inherit;
+  }
+
+  .flip-container.flipped .flipper .back .flash-card-back .o-circle__sign::after {
+    left: 100%;
+    top: 0%;
+    width: 500%;
+    height: 95%;
+    transform: translateY(4%) rotate(0deg);
+    border-radius: 0;
+    opacity: 0;
+    animation: set-shaddow 0s 1.13s ease-in-out forwards;
+    z-index: -1;
+  }
+  /*=======================
+        Sign Success
+  =========================*/
+  .flip-container.flipped .flipper .back .flash-card-back .o-circle__sign--success {
+    background: rgb(56, 176, 131);
+  }
+
+  .flip-container.flipped .flipper .back .flash-card-back .o-circle__sign--success .o-circle__sign {
+    width: 1rem;
+    height: 6rem;
+    border-radius: 50% 50% 50% 0% / 10%;
+    transform: translateX(130%) translateY(35%) rotate(45deg) scale(.11);
+    animation-name: success-sign-appearance;
+  }
+
+  .flip-container.flipped .flipper .back .flash-card-back .o-circle__sign--success .o-circle__sign::before {
+    bottom: -17%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    transform: translateX(-130%) rotate(90deg);
+    border-radius: 50% 50% 50% 50% / 20%;
+  }
+  /*--shadow--*/
+  .flip-container.flipped .flipper .back .flash-card-back .o-circle__sign--success .o-circle__sign::after {
+    background: rgb(56, 176, 131);
+  }
+  /*=======================
+        Sign Failure
+  =========================*/
+  .flip-container.flipped .flipper .back .flash-card-back .o-circle__sign--failure {
+    background: rgb(236, 78, 75);
+  }
+
+  .flip-container.flipped .flipper .back .flash-card-back .o-circle__sign--failure .o-circle__sign {
+    width: 1rem;
+    height: 7rem;
+    transform: translateY(25%) rotate(45deg) scale(.1);
+    border-radius: 50% 50% 50% 50% / 10%;
+    animation-name: failure-sign-appearance;
+  }
+
+  .flip-container.flipped .flipper .back .flash-card-back .o-circle__sign--failure .o-circle__sign::before {
+    top: 45%;
+    width: 1rem;
+    height: 6.9rem;
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%) rotate(90deg);
+    border-radius: inherit;
+    left: 3px;
+  }
+  /*--shadow--*/
+  .flip-container.flipped .flipper .back .flash-card-back .o-circle__sign--failure .o-circle__sign::after {
+    background: rgb(236, 78, 75);
+  }
+  /*-----------------------
+        @Keyframes
+  --------------------------*/
+  /*CIRCLE*/
+  @keyframes circle-appearance {
+    0% {
+      transform: scale(0);
+    }
+
+    15% {
+      transform: scale(0);
+    }
+
+    50% {
+      transform: scale(1.5);
+    }
+
+    60% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+  /*SIGN*/
+  @keyframes failure-sign-appearance {
+    50% {
+      opacity: 1;
+      transform: translateY(25%) rotate(45deg) scale(1.7);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(25%) rotate(45deg) scale(1);
+    }
+  }
+
+  @keyframes success-sign-appearance {
+    50% {
+      opacity: 1;
+      transform: translateX(130%) translateY(35%) rotate(45deg) scale(1.7);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(130%) translateY(35%) rotate(45deg) scale(1);
+    }
+  }
+
+
+  @keyframes set-shaddow {
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes set-overflow {
+    to {
+      overflow: hidden;
+    }
+  }

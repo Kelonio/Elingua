@@ -1,0 +1,377 @@
+page-initial {
+  .center {
+    text-align: center;
+  }
+
+  .logo {
+    width: 25px;
+  }
+
+  .toolbar-background {
+    background: #fecf00 !important;
+  }
+
+  .toolbar-title span {
+    position: relative;
+    color: white;
+    font-size: 17px;
+    margin-left: -4px;
+  }
+
+  .first-line {
+    display: flex;
+    margin-bottom: -10px;
+  }
+
+  .first-line p {
+    color: white;
+    font-size: 13px;
+    margin-left: 4px;
+    margin-top: 13px;
+  }
+
+  .first-line .quiz-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/quiz-icon.png);
+    width: 58px;
+    background-size: cover;
+    height: 35px;
+  }
+
+  .content {
+    background-color: #536d79;
+  }
+
+  .scroll-content {
+    padding: 16px !important;
+  }
+
+
+  ion-card {
+    position: relative;
+  }
+
+  .mycard-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(83, 109, 121, 0.50);
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .card-btn {
+    position: absolute;
+    bottom: 16px;
+    right: 8px;
+  }
+
+  .blue-card {
+    background-color: #28d4f9;
+  }
+
+  .white {
+    color: white;
+  }
+
+  .black {
+    color: #333;
+  }
+
+  .grey {
+    color: rgb(83, 109, 121);
+  }
+
+  .card-subt {
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .card-tit {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .activities.grammar {
+    display: flex;
+    margin-top: 15px;
+
+    p {
+      color: white;
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+  .long-text{
+    line-height: 11px;
+    font-weight: 100;
+  }
+
+
+  .activities.progress {
+    display: flex;
+    margin-top: 15px;
+  }
+
+  .activities.progress p {
+    color: rgb(83, 109, 121);
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  .stack-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/stack-icon.png);
+    width: 19px;
+    background-size: cover;
+    height: 16px;
+  }
+
+  .stack-icon-blue {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/stack-icon-blue.png);
+    width: 19px;
+    background-size: cover;
+    height: 16px;
+  }
+
+
+
+  .grammar-btn {
+    position: absolute;
+    bottom: 7px;
+    right: 8px;
+  }
+
+  .white-card {
+    background-color: white;
+  }
+
+  span.progress-bar {
+    color: white;
+  }
+
+  span.progress-bar {
+    width: 24% !important;
+    bottom: 59px;
+    right: 9px;
+  }
+
+  .button-round {
+    padding: 0px 12px;
+    font-size: 11px;
+  }
+
+  .dark-blue-btn {
+    background-color: #536d79;
+    color: white;
+  }
+
+
+
+  .center {
+    text-align: center;
+  }
+
+
+  .bar-button-default {
+    color: white;
+    margin-right: 0px;
+  }
+
+  .toolbar-title {
+    color: white;
+    font-size: 1.3rem;
+    padding-left: 0px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 5px;
+  }
+
+
+
+
+
+  .video-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/video-icon.png);
+    width: 50px;
+    background-size: cover;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .comprehension-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/comprehension-icon.png);
+    width: 50px;
+    background-size: cover;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .grammar-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/grammar-icon.png);
+    width: 50px;
+    background-size: cover;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .vocab-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/vocab-icon.png);
+    width: 50px;
+    background-size: cover;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .test-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/test-icon.png);
+    width: 50px;
+    background-size: cover;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .relative-col {
+    position: relative;
+  }
+
+  span.progress-bar:before {
+    background-color: #28d4f9;
+  }
+
+  span.progress-bar:after {
+    background-color: #b3b6b7;
+  }
+
+  span.progress-bar {
+    width: 100% !important;
+    right: 9px;
+    font-size: 11px;
+    color: grey;
+    bottom: 33px;
+  }
+
+  .clock-icon-blue {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/clock-icon-blue.png);
+    width: 13px;
+    background-size: contain;
+    height: 21px;
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+  }
+
+  .carpeta-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/carpeta-icon.png);
+    width: 13px;
+    background-size: contain;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+  }
+
+  .audio-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/audio-icon.png);
+    width: 13px;
+    background-size: contain;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 11px;
+  }
+
+  .minivideo-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/minivideo-icon.png);
+    width: 13px;
+    background-size: contain;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 11px;
+  }
+
+  .level-pretit {
+    color: white;
+    font-size: 11px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .level-tit {
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .general-pretit {
+    color: white;
+    font-size: 11px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .general-tit {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+
+  .stack-icon {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/stack-icon.png);
+    width: 17px;
+    background-size: cover;
+    height: 14px;
+    margin-top: 2px;
+  }
+
+
+
+  .modules-head {
+    color: white !important;
+    margin-top: 3px;
+    margin-bottom: 31px;
+  }
+
+  .activities.grammar {
+    display: flex;
+
+    p {
+      color: #28d4f9;
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+
+  span.progress-bar:after,
+  span.progress-bar:before {
+    bottom: -20px;
+  }
+}

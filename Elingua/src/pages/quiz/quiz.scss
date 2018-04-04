@@ -1,0 +1,123 @@
+page-quiz {
+  .center {
+    text-align: center;
+  }
+
+
+  .item {
+    background: white;
+    color: black;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .toolbar-background {
+    background: #fecf00 !important;
+  }
+
+  .toolbar-title span {
+    position: relative;
+    top: -7px;
+    color: white;
+    font-size: 17px;
+  }
+
+  .content {
+    background-color: #536d79;
+  }
+
+  .scroll-content {
+    padding: 1px !important;
+  }
+
+  .toolbar-title {
+    text-align: center;
+    color: white;
+    font-size: 17px;
+  }
+
+  .quiz-title {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  ion-card.card h3 {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  flash-card .flip-container,
+  flash-card .front,
+  flash-card .back {
+    width: 90vw;
+    height: 40vh;
+    margin: 15px auto !important;
+  }
+
+  .question {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 1em 0;
+    background-color: #f7f9fa;
+  }
+
+  .item-radio ion-label.label {
+    font-size: 1.4rem;
+  }
+
+  .input-row .badge {
+    background-color: orange;
+    color: #fff;
+    border-radius: 15px;
+    min-width: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: 1px solid #d48900;
+    position: absolute;
+    top: 7px;
+    left: 0px;
+  }
+
+  .MB20 {
+    margin-bottom: 20px !important;
+  }
+
+  .radio-container .item .item-inner ion-label {
+    overflow: visible;
+    text-overflow: initial;
+    white-space: normal;
+    font-size: 1.4rem;
+    margin: 6px 0;
+    color: #444;
+    line-height: 1.6em;
+    padding-left: 35px;
+  }
+
+  .radio-container .item .item-inner ion-label .badge {
+    background-color: orange;
+    color: #fff;
+    border-radius: 15px;
+    min-width: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: 1px solid #d48900;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+  }
+  
+}

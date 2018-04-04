@@ -1,0 +1,25 @@
+<ion-header class="{{level?.name | replaceBlanks}}">
+  <ion-navbar>
+    <ion-title>
+      Back to video
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="{{level?.name | replaceBlanks}}" padding>
+  <p class="general-pretit">Video {{index?.i}}/{{index?.t}}</p> <!--Hacer con variables-->
+  <h2 class="general-tit"><span text-capitalize>{{video?.name}}</span></h2>
+  
+  <ion-card>
+
+    <ion-card-content>
+      <p class="white" [innerHTML]="video?.description | safeHtml"></p>
+
+      <video controls="controls" preload="metadata" autoplay="autoplay" webkit-playsinline="webkit-playsinline" class="videoPlayer">
+        <source src="assets/media/video/{{video?.file}}" type="video/mp4" />
+      </video>
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,120 @@
+{
+  "superlevel": "Beginner",
+  "modules": [
+    {
+      "name": "video",
+      "contentType": "Videos",
+      "content": [
+        {
+          "name": "Grocery",
+          "file": "grocery.mp4",
+          "description": "Video para aprender sobre las tiendas.",
+          "length": 3,
+          "progress": 75
+        },
+        {
+          "name": "At the bar",
+          "file": "grocery.mp4",
+          "description": "Video description de prueba con html <ol><li>primera opcion</li><li>segunda opcion</li></ol>.",
+          "length": 2,
+          "progress": 0
+        }
+      ]
+    },
+    {
+      "name": "comprehension",
+      "contentType": "Exercises",
+      "content": [
+        {
+          "name": "In the factory",
+          "type": "quiz",
+          "file-json": "levels/level2/comprehension/questions-test.json",
+          "length": 15,
+          "progress": 0
+        },
+        {
+          "name": "The present pasive",
+          "question-type": "recognition",
+          "length": 5,
+          "progress": 0
+        },
+        {
+          "name": "In the flowershop",
+          "question-type": "recognition",
+          "length": 7,
+          "progress": 0
+        },
+        {
+          "name": "Offers and requests",
+          "question-type": "recognition",
+          "length": 6,
+          "progress": 0
+        }
+      ]
+    },
+    {
+      "name": "grammar",
+      "contentType": "Activities",
+      "content": [
+        {
+          "name": "Grammar Book",
+          "length": 15,
+          "progress": 0
+        },
+        {
+          "name": "The present pasive",
+          "length": 4,
+          "progress": 0
+        },
+        {
+          "name": "Basic relative clauses",
+          "length": 7,
+          "progress": 0
+        },
+        {
+          "name": "Offers and requests",
+          "length": 6,
+          "progress": 0
+        },
+        {
+          "name": "Revision",
+          "length": 12,
+          "progress": 0
+        }
+      ]
+    },
+    {
+      "name": "vocabulary",
+      "contentType": "words",
+      "content": [
+        {
+          "name": "Vehicles words",
+          "file-json": "levels/level2/vocabulary/vehicle-vocabulary.json",
+          "length": 0,
+          "progress": 0
+        },
+        {
+          "name": "Words in the restaurant",
+          "length": 4,
+          "progress": 0
+        }
+      ]
+    },
+    {
+      "name": "final",
+      "contentType": "test",
+      "content": [
+        {
+          "name": "First part",
+          "length": 30,
+          "progress": 0
+        },
+        {
+          "name": "Second part",
+          "length": 90,
+          "progress": 0
+        }
+      ]
+    }
+  ]
+}

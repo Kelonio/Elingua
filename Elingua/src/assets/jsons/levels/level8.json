@@ -1,0 +1,237 @@
+{
+  "superlevel": "Pre-Intermediate",
+  "modules": [
+    {
+      "name": "video",
+      "contentType": "Videos",
+      "content": [
+        {
+          "name": "Video (Part 1)",
+          "file": "grocery.mp4",
+          "description": "¿Como sería comprar la fruta en una frutería en inglés? Mira el siguiente vídeo y presta atención",
+          "length": 3,
+          "progress": 75
+        },
+        {
+          "name": "Video (Part 2)",
+          "file": "grocery.mp4",
+          "description": "¿Como sería comprar la fruta en una frutería en inglés? Mira el siguiente vídeo y presta atención",
+          "length": 2,
+          "progress": 0
+        }
+      ]
+    },
+    {
+      "name": "comprehension",
+      "contentType": "Exercises",
+      "content": [
+        {
+          "name": "Part 1 Exercises",
+          "type": "dropwords",
+          "file-json": "levels/level8/comprehension/exercise-1.json",
+          "length": 15,
+          "progress": 0
+        },
+        {
+          "name": "Part 2 Exercises",
+          "type": "multiselect",
+          "file-json": "levels/level8/comprehension/exercise-2-multiselect.json",
+          "length": 15,
+          "progress": 0
+        },
+        {
+          "name": "Read and Repeat",
+          "type": "recognition",
+          "file-json": "levels/level8/comprehension/questions-recognition-sentences.json",
+          "length": 5,
+          "progress": 0
+        }
+      ]
+    },
+    {
+      "name": "grammar",
+      "contentType": "Lessons",
+      "content": [
+        {
+          "name": "Grammar Book",
+          "file-json": "levels/level8/grammar/book-grammar.json",
+          "length": 15,
+          "progress": 0,
+          "type": "book"
+        },
+        {
+          "name": "The present pasive",
+          "file-json": "levels/level8/grammar/the-present-pasive-multiselect.json",
+          "length": 4,
+          "progress": 0,
+          "type": "multiselect"
+        },
+        {
+          "name": "Basic relative clauses",
+          "type": "dropwords",
+          "length": 7,
+          "file-json": "levels/level8/grammar/basic-relative-clause.json",
+          "progress": 0
+        },
+        {
+          "name": "Offers and requests",
+          "file-json": "levels/level8/grammar/offers-and-request-select.json",
+          "length": 6,
+          "progress": 0,
+          "type": "select"
+        },
+        {
+          "name": "Revision",
+          "type": "select",
+          "file-json": "levels/level8/grammar/revision.json",
+          "length": 12,
+          "progress": 0
+        }
+      ]
+    },
+    {
+      "name": "vocabulary",
+      "contentType": "words",
+      "content": [
+        {
+          "name": "Vocabulary Book",
+          "file-json": "levels/level8/vocabulary/book-vocabulary.json",
+          "length": 15,
+          "progress": 0,
+          "type": "book"
+        },
+        {
+          "name": "Products and producing",
+          "file-json": "levels/level8/vocabulary/products-and-producing-dropwords.json",
+          "length": 4,
+          "progress": 0,
+          "type": "dropwords"
+        },
+        {
+          "name": "Sequencing language",
+          "type": "dropwords",
+          "length": 7,
+          "file-json": "levels/level8/vocabulary/basic-relative-clause.json",
+          "progress": 0
+        },
+        {
+          "name": "Words that are often confused",
+          "file-json": "levels/level8/vocabulary/offers-and-request-select.json",
+          "length": 6,
+          "progress": 0,
+          "type": "select"
+        },
+        {
+          "name": "Listen and Repeat",
+          "type": "recognition",
+          "file-json": "levels/level8/vocabulary/questions-recognition-sentences.json",
+          "length": 5,
+          "progress": 0
+        },
+        {
+          "name": "Revision",
+          "type": "select",
+          "file-json": "levels/level8/vocabulary/revision.json",
+          "length": 12,
+          "progress": 0
+        }
+      ]
+    },
+    {
+      "name": "final",
+      "contentType": "test",
+      "content": [
+        {
+          "name": "Final Test",
+          "length": 30,
+          "progress": 0,
+          "type": "container",
+          "content": [
+            {
+              "name": "Group 1. The present pasive",
+              "file-json": "levels/level8/final/the-present-pasive-01.json",
+              "length": 10,
+              "progress": 0,
+              "type": "radio"
+            },
+            {
+              "name": "Group 1. The present pasive",
+              "file-json": "levels/level8/final/the-present-pasive-02.json",
+              "length": 10,
+              "progress": 0,
+              "type": "radio"
+            },
+            {
+              "name": "Group 1. The present pasive",
+              "file-json": "levels/level8/final/the-present-pasive-03.json",
+              "length": 10,
+              "progress": 0,
+              "type": "radio"
+            },
+            {
+              "name": "Group 1. The present pasive",
+              "file-json": "levels/level8/final/the-present-pasive-04.json",
+              "length": 4,
+              "progress": 0,
+              "type": "radio"
+            },
+            {
+              "name": "Group 1. The present pasive",
+              "file-json": "levels/level8/final/the-present-pasive-05.json",
+              "length": 10,
+              "progress": 0,
+              "type": "radio"
+            },
+            {
+              "name": "TGroup 1. The present pasive",
+              "file-json": "levels/level8/final/the-present-pasive-06.json",
+              "length": 10,
+              "progress": 0,
+              "type": "radio"
+            },
+            {
+              "name": "Group 1. The present pasive",
+              "file-json": "levels/level8/final/the-present-pasive-07.json",
+              "length": 4,
+              "progress": 0,
+              "type": "radio"
+            },
+            {
+              "name": "Group 1. The present pasive",
+              "file-json": "levels/level8/final/the-present-pasive-08.json",
+              "length": 4,
+              "progress": 0,
+              "type": "radio"
+            },
+            {
+              "name": "Group 1. The present pasive",
+              "file-json": "levels/level8/final/the-present-pasive-09.json",
+              "length": 4,
+              "progress": 0,
+              "type": "radio"
+            },
+            {
+              "name": "Group 2. Basic Relative Clauses",
+              "file-json": "levels/level8/final/the-present-pasive-10.json",
+              "length": 4,
+              "progress": 0,
+              "type": "radio"
+            }
+          ]
+
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+

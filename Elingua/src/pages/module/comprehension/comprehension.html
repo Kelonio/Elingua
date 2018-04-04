@@ -1,0 +1,21 @@
+<ion-header class="{{level?.name | replaceBlanks}}"> <!--Esto deberia ser variable-->
+  <ion-navbar>
+    <ion-title>Back to comprehension</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="{{level?.name | replaceBlanks}}" no-bounce>
+  <p class="general-pretit">Exercise {{index?.i}}/{{index?.t}}</p> <!--Hacer con variables-->
+  <h2 class="general-tit"><span text-capitalize>{{exercise?.name}}</span></h2>
+  <div class="exercise-type"><p class="exercise-head">{{exercise?.type}}</p></div>
+
+  <div [ngSwitch]="questionType">
+    <question-drop-words *ngSwitchCase="'dropwords'"  [question]="exercise"></question-drop-words>
+    <question-quiz *ngSwitchCase="'quiz'" [questions]="questions"></question-quiz>
+    <question-speech-recognition *ngSwitchCase="'recognition'" [exercise]="exercise"></question-speech-recognition>
+    <question-multiselect *ngSwitchCase="'multiselect'" [question]="exercise"></question-multiselect>
+
+    <h1 *ngSwitchDefault>Missing question</h1>
+  </div>
+</ion-content>
+

@@ -1,0 +1,15 @@
+{
+  "description": "<p class='description'>In this section you are going to revise: Past Simple, Past Continuous, Some & Any.</p><p class='description'>Write the Past Simple form of these regular verbs</p>",
+  "questions": [
+    "<div class='input-row'><span class='badge'>1</span><span class='question'>want</span><input type='text'/></div>",
+    "<div class='input-row'><span class='badge'>2</span><span class='question'>try</span><input type='text'/></div>",
+    "<div class='input-row'><span class='badge'>3</span><span class='question'>wish</span><input type='text'/></div>",
+    "<div class='input-row'><span class='badge'>4</span><span class='question'>lie</span><input type='text'/></div>",
+    "<div class='input-row'><span class='badge'>5</span><span class='question'>smoke</span><input type='text'/></div>",
+    "<div class='input-row'><span class='badge'>6</span><span class='question'>play</span><input type='text'/></div>",
+    "<div class='input-row'><span class='badge'>7</span><span class='question'>work</span><input type='text'/></div>",
+    "<div class='input-row'><span class='badge'>8</span><span class='question'>arrive</span><input type='text'/></div>",
+    "<div class='input-row'><span class='badge'>9</span><span class='question'>plan</span><input type='text'/></div>",
+    "<div class='input-row'><span class='badge'>10</span><span class='question'>study</span><input type='text'/></div>"
+  ]
+}
